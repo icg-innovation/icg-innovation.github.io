@@ -85,7 +85,7 @@ Note: If you're using a password to connect to the cluster, you'll need to add t
 
 Objective Reminder: To be able to connect to a *slurm allocated* compute node using VS Code by proxying through the login node, with SSH credentials passing all the way through.
 
-Requirements: PuTTY (Pageant and PuTTYgen), OpenSSH for Windows (comes with Windows 10 or 11), Latest VSCode (v1.74.3 as of writing), and the Remote Development extension pack.
+Requirements: PuTTY (Pageant and PuTTYgen **from the Microsoft Store and not AppsAnywhere if using a University issued laptop!**), OpenSSH for Windows (comes with Windows 10 or 11), Latest VSCode (v1.74.3 as of writing) with the Remote Development extension pack.
 
 Firstly, this is not as easy as it should be for a number of reasons. This process will be easier if you check that these two settings are enabled first:
 
