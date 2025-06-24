@@ -1,11 +1,26 @@
-title: ICG Innovation
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
+title: Research Software Engineering @ ICG
+description: The Research Software Engineering team at the Institute of Cosmology and Gravitation
+show_downloads: false
 google_analytics: # Add your Google Analytics tracking ID here
 theme: jekyll-theme-cayman
-author: ICG Innovation
+author: ICG RSE Team
+tagline: Building research software solutions for cosmology and astrophysics
 
 # Standard Jekyll settings
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections for projects
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

@@ -2,122 +2,63 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Welcome to ICG Research Software Engineering
 
-[Link to another page](./another-page.html).
+We are the Research Software Engineering team at the Institute of Cosmology and Gravitation (ICG), University of Portsmouth. We develop cutting-edge software solutions to support cosmological and astrophysical research.
 
-There should be whitespace between paragraphs.
+## Latest Blog Posts
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+<div class="blog-preview">
+{% for post in site.posts limit:3 %}
+  <article class="blog-item">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  </article>
+{% endfor %}
+</div>
 
-# Header 1
+[View all blog posts →](/blog/)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## Featured Projects
 
-## Header 2
+<div class="projects-grid">
+{% for project in site.projects limit:3 %}
+  <div class="project-tile">
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <p>{{ project.summary }}</p>
+    <div class="project-links">
+      {% if project.github %}
+        <a href="{{ project.github }}" class="btn btn-sm">GitHub</a>
+      {% endif %}
+      {% if project.paper %}
+        <a href="{{ project.paper }}" class="btn btn-sm">Paper</a>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+[View all projects →](/projects/)
 
-### Header 3
+## Funders & Collaborators
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+<div class="partners-section">
+  <h3>Our work is supported by:</h3>
+  <div class="partners-grid">
+    <!-- Funders will be added here -->
+    <p>UKRI, STFC, European Research Council, and more...</p>
+  </div>
+  
+  <h3>We collaborate with:</h3>
+  <div class="partners-grid">
+    <!-- Collaborators will be added here -->
+    <p>Leading research institutions worldwide in cosmology and astrophysics</p>
+  </div>
+</div>
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+[Learn more about our partnerships →](/funding/)
 
-#### Header 4
+## Get in Touch
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Interested in collaborating or learning more about our work? [Contact us](/about/) or explore our [GitHub repositories](https://github.com/icg-innovation).

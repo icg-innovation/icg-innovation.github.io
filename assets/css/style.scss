@@ -2,3 +2,151 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+// Custom styles for ICG RSE site
+
+// Navigation
+.main-nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+// Blog styles
+.blog-preview, .blog-list {
+  margin: 2rem 0;
+}
+
+.blog-item, .blog-entry {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e1e4e8;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-meta {
+  color: #586069;
+  font-size: 0.9em;
+  margin: 0.5rem 0;
+}
+
+.read-more {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Projects grid
+.projects-grid, .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-tile, .project-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1.5rem;
+  background: #f6f8fa;
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h2, h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: #0366d6;
+      }
+    }
+  }
+}
+
+.project-summary {
+  color: #586069;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  
+  .btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+.project-tags {
+  margin: 1rem 0;
+  
+  .tag {
+    display: inline-block;
+    background: #e1e4e8;
+    color: #24292e;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.85em;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Partners section
+.partners-section {
+  margin: 2rem 0;
+  
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.partners-grid {
+  margin-bottom: 2rem;
+}
+
+// Post and project layouts
+.post, .project {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-header, .project-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.post-footer, .project-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e4e8;
+}
+
+// Responsive adjustments
+@media screen and (max-width: 768px) {
+  .projects-grid, .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
