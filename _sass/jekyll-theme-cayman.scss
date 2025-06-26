@@ -155,15 +155,15 @@ a {
   margin-bottom: 0.1rem;
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 2rem;
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -228,7 +228,15 @@ a {
   }
 
   h1,
-  h2,
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: variables.$section-headings-color;
+    border-bottom: 1px solid variables.$hr-border-color;
+    padding-bottom: 0.5rem;
+  }
+
   h3,
   h4,
   h5,
@@ -377,28 +385,23 @@ a {
 }
 
 .site-footer {
-  padding-top: 2rem;
+  background-color: #505457; // A dark navy blue
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  text-align: center;
   margin-top: 2rem;
-  border-top: solid 1px variables.$hr-border-color;
 
   @include large {
     font-size: 1rem;
   }
-
   @include medium {
     font-size: 1rem;
   }
-
   @include small {
     font-size: 0.9rem;
   }
-}
 
-.site-footer-owner {
-  display: block;
-  font-weight: bold;
-}
-
-.site-footer-credits {
-  color: variables.$blockquote-text-color;
+  p {
+    margin: 0.25rem 0;
+  }
 }
