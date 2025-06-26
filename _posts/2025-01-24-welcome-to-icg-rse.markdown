@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to the ICG Research Software Engineering Team"
-date: 2025-01-24
+date: 2025-06-24
 author: ICG RSE Team
 categories: [announcements, general]
 ---
