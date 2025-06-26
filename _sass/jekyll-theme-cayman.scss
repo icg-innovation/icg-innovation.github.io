@@ -106,10 +106,11 @@ a {
 }
 
 .page-header {
+  position: relative;
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: linear-gradient(90deg, $header-bg-color-secondary, $header-bg-color);
 
   @include large {
     padding: 5rem 6rem;
@@ -121,6 +122,29 @@ a {
 
   @include small {
     padding: 2rem 1rem;
+  }
+}
+
+.header-logo {
+  position: absolute;
+  height: auto;
+
+  @include large {
+    left: 3rem;
+    top: 2rem;
+    width: 80px;
+  }
+
+  @include medium {
+    left: 2rem;
+    top: 1.5rem;
+    width: 60px;
+  }
+
+  @include small {
+    left: 1rem;
+    top: 1rem;
+    width: 40px;
   }
 }
 
