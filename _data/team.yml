@@ -80,8 +80,11 @@ members:
     email: "Arthur.Tolley@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/arthur-tolley-2"
     orcid: "0000-0001-9841-943X"
-    research_interests: ""
-    bio: "Brief bio here..."
+    research_interests:
+      - "Data Science"
+      - "Software Engineering"
+      - "Machine Learning"
+    bio: "RSE developing Road Detection Digital Twin for humanitarian aid."
     image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"  # Optional local image
 
   - name: "Obinna Umeh"
