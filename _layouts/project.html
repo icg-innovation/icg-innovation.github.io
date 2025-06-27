@@ -1,19 +1,51 @@
 ---
 layout: default
 ---
-<article class="project-page">
+
+<article class="project">
   <header class="project-header">
-    <h1>{{ page.title }}</h1>
-    {% if page.summary %}
+    <div class="project-header-main">
+      <h1 class="project-title">{{ page.title }}</h1>
       <p class="project-summary">{{ page.summary }}</p>
-    {% endif %}
-    <div class="project-links">
-      {% if page.github %}<a href="{{ page.github }}" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>{% endif %}
-      {% if page.paper %}<a href="{{ page.paper }}" class="btn" target="_blank" rel="noopener noreferrer">Read the Paper</a>{% endif %}
     </div>
+    {% if page.github or page.paper or page.docs %}
+      <div class="project-links">
+        {% if page.github %}
+          <a href="{{ page.github }}" class="btn btn--outline">View on GitHub</a>
+        {% endif %}
+        {% if page.paper %}
+          <a href="{{ page.paper }}" class="btn btn--outline">Paper</a>
+        {% endif %}
+        {% if page.docs %}
+          <a href="{{ page.docs }}" class="btn btn--outline">Documentation</a>
+        {% endif %}
+      </div>
+    {% endif %}
   </header>
-  <hr>
+
+  <div class="project-meta">
+    {% if page.funding %}
+      <div class="project-funding">
+        <strong>Funding:</strong> 
+        {% if page.grant %}<a href="{{ page.grant }}" target="_blank" rel="noopener noreferrer">{{ page.funding }}</a>
+        {% else %}{{ page.funding }}{% endif %}
+      </div>
+    {% endif %}
+    {% if page.tags %}
+      <div class="project-tags">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
   <div class="project-content">
     {{ content }}
   </div>
+
+  <footer class="project-footer">
+    <a href="{{ '/projects/' | relative_url }}">← Back to all projects</a>
+  </footer>
 </article>

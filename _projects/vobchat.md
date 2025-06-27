@@ -1,8 +1,14 @@
 ---
 layout: project
 title: "VobChat"
+featured: true
+featured_order: 1
 summary: "A conversational AI dashboard for exploring historical and statistical data through natural language interaction"
 github: "https://github.com/icg-innovation/vobchat"
+paper: "https://www.test_vobchat_paper.com"
+funding: "Supported by the Economic and Social Research Council"
+image: /assets/images/projects/test3_preview.jpg
+grant: https://gtr.ukri.org/projects?ref=ES%2FZ502923%2F1#/tabOverview
 tags: [python, ai, dash, postgresql, langchain, geospatial]
 ---
 
