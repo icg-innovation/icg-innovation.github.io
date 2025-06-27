@@ -417,6 +417,19 @@ a {
   }
 }
 
+.logo-grid--home {
+  gap: 2rem;
+  margin-top: 1rem;
+
+  .logo-item {
+    padding: 0.75rem;
+    img {
+      max-width: 140px;
+      max-height: 80px;
+    }
+  }
+}
+
 .site-footer {
   background-color: #505457; // A dark navy blue
   color: rgba(255, 255, 255, 0.7);
