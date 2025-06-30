@@ -36,10 +36,13 @@ We are the Research Software Engineering team at the Institute of Cosmology and 
 
 <p>Our work is made possible through the support of leading funding agencies and collaborations with world-class institutions.</p>
 
-<div class="logo-grid">
-  {% for funder in site.data.funders %}
-    <a href="{{ funder.url }}" class="logo-item" target="_blank" rel="noopener noreferrer" title="{{ funder.name }}">
-      <img src="{{ funder.logo | relative_url }}" alt="{{ funder.name }} Logo">
+<div class="logo-grid logo-grid--home">
+  {% assign featured_funders = site.data.funders | where: "featured", true %}
+  {% assign featured_collaborators = site.data.collaborators | where: "featured", true %}
+  {% assign featured_partners = featured_funders | concat: featured_collaborators %}
+  {% for partner in featured_partners %}
+    <a href="{{ partner.url }}" class="logo-item" target="_blank" rel="noopener noreferrer" title="{{ partner.name }}">
+      <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }} Logo">
     </a>
   {% endfor %}
 </div>
