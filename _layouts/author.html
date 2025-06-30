@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% if page.image %}
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width:150px; border-radius:50%;">
+{% endif %}
+
+<p><strong>Role:</strong> {{ page.role }}</p>
+
+{% if page.bio %}
+  <p>{{ page.bio }}</p>
+{% endif %}
+
+{% if page.research_interests %}
+  <p><strong>Research Interests:</strong> {{ page.research_interests }}</p>
+{% endif %}
+
+<ul>
+  {% if page.email %}
+    <li>Email: <a href="mailto:{{ page.email }}">{{ page.email }}</a></li>
+  {% endif %}
+  {% if page.pure_url %}
+    <li>Pure profile: <a href="{{ page.pure_url }}">{{ page.pure_url }}</a></li>
+  {% endif %}
+  {% if page.orcid %}
+    <li>ORCID: <a href="https://orcid.org/{{ page.orcid }}">https://orcid.org/{{ page.orcid }}</a></li>
+  {% endif %}
+</ul>
+
+<hr>
+
+<h2>Projects by {{ page.title }}</h2>
+<ul>
+  {% assign projects = site.pages | concat: site.projects %}
+  {% assign authored_projects = projects | where_exp: "proj", "proj.authors contains page.title" %}
+  {% for project in authored_projects %}
+    <li>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

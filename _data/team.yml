@@ -4,6 +4,7 @@
 
 members:
   - name: "Andy Berry"
+    slug: "andy-berry"
     role: "Research Software Engineer"
     email: "Andrew.Berry@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/andy-berry"
@@ -12,6 +13,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/104676684/Profile_Slack.jpg"  # Optional local image
 
   - name: "Gareth Cabourn Davies"
+    slug: "gareth-cabourn-davies"
     role: "Research Software Engineer"
     email: "Gareth.Cabourn-Davies@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/gareth-cabourn-davies"
@@ -21,6 +23,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/26555480/profilepic.jpg"  # Optional local image
 
   - name: "Maxime Deckers"
+    slug: "maxime-deckers"
     role: "Research Software Engineer"
     email: "Maxime.Deckers@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/maxime-deckers"
@@ -29,6 +32,7 @@ members:
     image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"  # Optional local image
 
   - name: "Ricardo Giorgetti Landim"
+    slug: "ricardo-giorgetti-landim"
     role: "Research Software Engineer"
     email: "Ricardo.Landim@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/ricardo-giorgetti-landim"
@@ -38,6 +42,7 @@ members:
     image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"  # Optional local image
 
   - name: "Coleman Krawczyk"
+    slug: "coleman-krawczyk"
     role: "Senior Research Software Engineer"
     email: "Coleman.Krawczyk@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/coleman-krawczyk"
@@ -47,6 +52,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/26284802/14692875.jpg"  # Optional local image
 
   - name: "Xan Morice-Atkinson"
+    slug: "xan-morice-atkinson"
     role: "Research Software Engineer"
     email: "Xan.Morice-Atkinson@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/xan-guilian-morice-atkinson"
@@ -59,6 +65,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/81823383/XMA_smaller.png"  # Optional local image
 
   - name: "Lorenza Nanni"
+    slug: "lorenza-nanni"
     role: "Research Software Engineer"
     email: "Lorenza.Nanni@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/lorenza-nanni-2"
@@ -67,6 +74,7 @@ members:
     image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"  # Optional local image
 
   - name: "Christopher Pattison"
+    slug: "christopher-pattison"
     role: "Research Software Engineer"
     email: "Christopher.Pattison@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/christopher-pattison"
@@ -76,6 +84,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/51120090/twitter_pic_blue_cropped_1_.jpg"  # Optional local image
 
   - name: "Arthur Tolley"
+    slug: "arthur-tolley"
     role: "Research Software Engineer"
     email: "Arthur.Tolley@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/arthur-tolley-2"
@@ -88,6 +97,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"  # Optional local image
 
   - name: "Obinna Umeh"
+    slug: "obinna-umeh"
     role: "Research Software Engineer"
     email: "Obinna.Umeh@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/obinna-umeh-2"
@@ -97,6 +107,7 @@ members:
     image: "https://researchportal.port.ac.uk/files-asset/80978711/Linkedin.jpg"  # Optional local image
 
   - name: "Sam Youles"
+    slug: "sam-youles"
     role: "Research Software Engineer"
     email: "Samantha.Youles@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/sam-youles"
@@ -104,8 +115,9 @@ members:
     research_interests: ""
     bio: "Brief bio here..."
     image: "https://researchportal.port.ac.uk/files-asset/88806483/profileMarch24.png"  # Optional local image
-  
+
   - name: "Toby Maule"
+    slug: "toby-maule"
     role: "Senior Specialist Technician"
     email: "Toby.Maule@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/toby-maule"

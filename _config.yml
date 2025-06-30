@@ -16,6 +16,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  authors:
+    output: true
+    permalink: /author/:slug/
 
 # Defaults
 defaults:

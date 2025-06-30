@@ -28,6 +28,7 @@ title: About Us
 
 <div class="team-grid">
 {% for member in site.data.team.members %}
+  {% assign slug = member.slug %}
   <div class="team-member">
     {% if member.image %}
       <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="team-photo">
@@ -55,6 +56,7 @@ title: About Us
         <a href="https://orcid.org/{{ member.orcid }}" target="_blank">ORCID</a>
       {% endif %}
     </div>
+    <a href="/author/{{ slug }}/" class="team-member-link--stretched" aria-label="View profile for {{ member.name }}"></a>
   </div>
 {% endfor %}
 </div>
