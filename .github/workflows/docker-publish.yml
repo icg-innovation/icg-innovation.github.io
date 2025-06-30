@@ -1,0 +1,34 @@
+name: Build and Publish Docker image
+
+on:
+  push:
+    branches:
+      - main    # or your default branch
+  workflow_dispatch:    # allows manual triggering
+
+permissions:
+  contents: read
+  packages: write    # IMPORTANT for pushing to GHCR
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          docker build -t ghcr.io/icg-innovation/icg-innovation.github.io:${{ github.sha }} .
+
+      - name: Push Docker image
+        run: |
+          docker push ghcr.io/icg-innovation/icg-innovation.github.io:latest
