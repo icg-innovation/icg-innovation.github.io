@@ -1,7 +1,0 @@
-_site/
-.bundle/
-.git/
-.github/
-Dockerfile
-Gemfile.lock
-.dockerignore
