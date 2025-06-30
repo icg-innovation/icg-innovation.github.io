@@ -10,24 +10,31 @@ layout: default
 <div class="author-page">
   <header class="author-header">
     {% if author_profile %}
-      <div class="team-member">
-        <div style="display: flex; align-items: center; gap: 1.5rem;">
+      <div class="author-profile-grid">
+        <div class="author-profile-photo">
           {% if author_profile.image %}
             <img src="{{ author_profile.image | relative_url }}" alt="{{ author_profile.name }}" class="team-photo">
           {% else %}
             <div class="team-photo-placeholder"></div>
           {% endif %}
-          <div class="author-details">
-            <h1 class="author-name">{{ author_profile.name }}</h1>
-            <p class="team-role">{{ author_profile.role }}</p>
-            <div class="team-links">
-              <a href="mailto:{{ author_profile.email }}">Email</a>
-              {% if author_profile.pure_url %}<a href="{{ author_profile.pure_url }}" target="_blank" rel="noopener noreferrer">Pure Profile</a>{% endif %}
-              {% if author_profile.orcid %}<a href="https://orcid.org/{{ author_profile.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>{% endif %}
+        </div>
+        <div class="author-profile-details">
+          <h1 class="author-name">{{ author_profile.name }}</h1>
+          <p class="team-role">{{ author_profile.role }}</p>
+          <p class="team-bio">{{ author_profile.bio }}</p>
+          {% if author_profile.research_interests and author_profile.research_interests.size > 0 %}
+            <div class="team-interests">
+              {% for interest in author_profile.research_interests %}
+                <span class="tag">{{ interest }}</span>
+              {% endfor %}
             </div>
+          {% endif %}
+          <div class="team-links">
+            <a href="mailto:{{ author_profile.email }}">Email</a>
+            {% if author_profile.pure_url %}<a href="{{ author_profile.pure_url }}" target="_blank" rel="noopener noreferrer">Pure Profile</a>{% endif %}
+            {% if author_profile.orcid %}<a href="https://orcid.org/{{ author_profile.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>{% endif %}
           </div>
         </div>
-        <p class="team-bio" style="margin-top: 1rem;">{{ author_profile.bio }}</p>
       </div>
     {% else %}
       <h1>{{ page.title }}</h1>

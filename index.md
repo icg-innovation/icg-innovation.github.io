@@ -36,20 +36,12 @@ We are the Research Software Engineering team at the Institute of Cosmology and 
 
 <p>Our work is made possible through the support of leading funding agencies and collaborations with world-class institutions.</p>
 
-<div class="logo-grid logo-grid--home">
-  <a href="https://www.ukri.org/" class="logo-item" target="_blank" rel="noopener noreferrer" title="UK Research and Innovation">
-    <img src="/assets/images/logos/ukri_logo.png" alt="UKRI Logo">
-  </a>
-  <a href="https://stfc.ukri.org/" class="logo-item" target="_blank" rel="noopener noreferrer" title="Science and Technology Facilities Council">
-    <img src="/assets/images/logos/stfc_logo.png" alt="STFC Logo">
-  </a>
-  <a href="https://erc.europa.eu/" class="logo-item" target="_blank" rel="noopener noreferrer" title="European Research Council">
-    <img src="/assets/images/logos/erc_logo.png" alt="European Research Council Logo">
-  </a>
-  <a href="https://www.port.ac.uk/" class="logo-item" target="_blank" rel="noopener noreferrer" title="University of Portsmouth">
-    <img src="/assets/images/logos/uop_logo.png" alt="University of Portsmouth Logo">
-  </a>
-  <!-- Add or remove logos as needed for the homepage -->
+<div class="logo-grid">
+  {% for funder in site.data.funders %}
+    <a href="{{ funder.url }}" class="logo-item" target="_blank" rel="noopener noreferrer" title="{{ funder.name }}">
+      <img src="{{ funder.logo | relative_url }}" alt="{{ funder.name }} Logo">
+    </a>
+  {% endfor %}
 </div>
 
 [Learn more about our partnerships →](/funding/)

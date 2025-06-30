@@ -132,43 +132,23 @@
   }
 }
 
+.tag {
+  display: inline-block;
+  background: #e1e4e8;
+  color: #24292e;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .project-tags {
   margin: 1rem 0;
-  
-  .tag {
-    display: inline-block;
-    background: #e1e4e8;
-    color: #24292e;
-    padding: 0.25rem 0.5rem;
-    border-radius: 3px;
-    font-size: 0.85em;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
 .author-page .author-header {
   margin-bottom: 2rem;
-  text-align: center;
-}
-
-.author-page .author-header .team-member {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: left;
-  border: none;
-  background: none;
-  padding: 0;
-  box-shadow: none;
-  transform: none;
-}
-
-.author-page .author-header .author-name {
-  border-bottom: none;
-  margin-bottom: 0.25rem;
-}
-
-.author-page .author-header .author-details {
   text-align: left;
 }
 
@@ -181,6 +161,44 @@
 .author-page .author-projects h2 {
   text-align: center;
   border-bottom: none;
+}
+
+.author-profile-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.author-profile-photo .team-photo,
+.author-profile-photo .team-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+
+.author-profile-details {
+  .author-name {
+    margin-top: 0;
+    border-bottom: none;
+  }
+
+  .team-role {
+    margin-top: -0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .team-bio {
+    margin-bottom: 1.5rem;
+  }
+
+  .team-interests {
+    margin-bottom: 1.5rem;
+  }
+
+  .team-links {
+    justify-content: flex-start;
+  }
 }
 
 // Partners section
@@ -343,8 +361,6 @@
 }
 
 .team-interests {
-  font-size: 0.9em;
-  color: #586069;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -395,5 +411,22 @@
 @media screen and (max-width: 768px) {
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .author-profile-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .author-profile-photo {
+    margin: 0 auto 1rem auto;
+  }
+
+  .author-profile-details {
+    text-align: center;
+
+    .team-links {
+      justify-content: center;
+    }
   }
 }

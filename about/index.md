@@ -3,27 +3,6 @@ layout: default
 title: About Us
 ---
 
-# About the ICG RSE Team
-
-## What We Do
-
-- **Software Development**: Creating robust, scalable software solutions for research projects
-- **Data Analysis Tools**: Building tools for processing and analyzing large astronomical datasets
-- **High-Performance Computing**: Optimizing code for HPC environments and parallel computing
-- **Machine Learning**: Implementing ML techniques for astronomical data analysis
-- **Visualization**: Developing tools to visualize complex cosmological data
-- **Training & Support**: Providing software training and support to researchers
-
-## Our Expertise
-
-- Scientific Python (NumPy, SciPy, Astropy)
-- High-performance languages (C++, Fortran, Julia)
-- Parallel computing (MPI, OpenMP, CUDA)
-- Machine learning frameworks
-- Web technologies for data visualization
-- Version control and collaborative development
-- Software testing and continuous integration
-
 ## Our Team
 
 <div class="team-grid">
@@ -37,10 +16,12 @@ title: About Us
     {% endif %}
     <h3>{{ member.name }}</h3>
     <p class="team-role">{{ member.role }}</p>
-    {% if member.research_interests %}
-      <p class="team-interests">
-        <strong>Research Interests:</strong> {{ member.research_interests | join: ", " }}
-      </p>
+        {% if member.research_interests and member.research_interests.size > 0 %}
+          <div class="team-interests">
+            {% for interest in member.research_interests %}
+              <span class="tag">{{ interest }}</span>
+            {% endfor %}
+          </div>
     {% endif %}
     {% if member.bio %}
       <p class="team-bio">{{ member.bio }}</p>
@@ -64,6 +45,25 @@ title: About Us
 <div class="pure-integration-note">
   <p><em>Team profiles are integrated with the <a href="https://researchportal.port.ac.uk/">University of Portsmouth Pure Research Portal</a></em></p>
 </div>
+
+## What We Do
+
+- **Software Development**: Creating robust, scalable software solutions for research projects
+- **Data Analysis Tools**: Building tools for processing and analyzing large astronomical datasets
+- **High-Performance Computing**: Optimizing code for HPC environments and parallel computing
+- **Machine Learning**: Implementing ML techniques for astronomical data analysis
+- **Visualization**: Developing tools to visualize complex cosmological data
+- **Training & Support**: Providing software training and support to researchers
+
+## Our Expertise
+
+- Scientific Python (NumPy, SciPy, Astropy)
+- High-performance languages (C++, Fortran, Julia)
+- Parallel computing (MPI, OpenMP, CUDA)
+- Machine learning frameworks
+- Web technologies for data visualization
+- Version control and collaborative development
+- Software testing and continuous integration
 
 ## Join Our Team
 

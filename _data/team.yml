@@ -8,9 +8,9 @@ members:
     role: "Research Software Engineer"
     email: "Andrew.Berry@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/andy-berry"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/104676684/Profile_Slack.jpg"  # Optional local image
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/104676684/Profile_Slack.jpg"
 
   - name: "Gareth Cabourn Davies"
     slug: "gareth-cabourn-davies"
@@ -18,18 +18,18 @@ members:
     email: "Gareth.Cabourn-Davies@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/gareth-cabourn-davies"
     orcid: "0000-0002-4289-3439"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/26555480/profilepic.jpg"  # Optional local image
+    research_interests: [Gravitational Waves]
+    bio: It's your boy
+    image: "https://researchportal.port.ac.uk/files-asset/26555480/profilepic.jpg"
 
   - name: "Maxime Deckers"
     slug: "maxime-deckers"
     role: "Research Software Engineer"
     email: "Maxime.Deckers@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/maxime-deckers"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"  # Optional local image
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
   - name: "Ricardo Giorgetti Landim"
     slug: "ricardo-giorgetti-landim"
@@ -37,9 +37,9 @@ members:
     email: "Ricardo.Landim@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/ricardo-giorgetti-landim"
     orcid: "0000-0001-6801-3519"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"  # Optional local image
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
   - name: "Coleman Krawczyk"
     slug: "coleman-krawczyk"
@@ -47,9 +47,18 @@ members:
     email: "Coleman.Krawczyk@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/coleman-krawczyk"
     orcid: "0000-0001-9233-2341"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/26284802/14692875.jpg"  # Optional local image
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/26284802/14692875.jpg"
+
+  - name: "Toby Maule"
+    slug: "toby-maule"
+    role: "Senior Specialist Technician"
+    email: "Toby.Maule@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/toby-maule"
+    research_interests: [High Performance Computing]
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
   - name: "Xan Morice-Atkinson"
     slug: "xan-morice-atkinson"
@@ -57,21 +66,18 @@ members:
     email: "Xan.Morice-Atkinson@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/xan-guilian-morice-atkinson"
     orcid: "0000-0001-6540-5517"
-    research_interests:
-      - "High Performance Computing"
-      - "Machine Learning"
-      - "Cosmological Simulations"
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/81823383/XMA_smaller.png"  # Optional local image
+    research_interests: [High Performance Computing, Machine Learning, Cosmological Simulations]
+    bio: Xan, Xan, Xan, Xan, Xan, Xan, Xan, Xan
+    image: "https://researchportal.port.ac.uk/files-asset/81823383/XMA_smaller.png"
 
   - name: "Lorenza Nanni"
     slug: "lorenza-nanni"
     role: "Research Software Engineer"
     email: "Lorenza.Nanni@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/lorenza-nanni-2"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"  # Optional local image
+    research_interests: [Earth Observation, Machine Learning]
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
   - name: "Christopher Pattison"
     slug: "christopher-pattison"
@@ -79,9 +85,9 @@ members:
     email: "Christopher.Pattison@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/christopher-pattison"
     orcid: "0000-0003-3272-2617"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/51120090/twitter_pic_blue_cropped_1_.jpg"  # Optional local image
+    research_interests: [Public Outreach, Cosmology]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/51120090/twitter_pic_blue_cropped_1_.jpg"
 
   - name: "Arthur Tolley"
     slug: "arthur-tolley"
@@ -89,12 +95,9 @@ members:
     email: "Arthur.Tolley@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/arthur-tolley-2"
     orcid: "0000-0001-9841-943X"
-    research_interests:
-      - "Data Science"
-      - "Software Engineering"
-      - "Machine Learning"
-    bio: "RSE developing Road Detection Digital Twin for humanitarian aid."
-    image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"  # Optional local image
+    research_interests: [Data Science, Software Engineering, Machine Learning]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"
 
   - name: "Obinna Umeh"
     slug: "obinna-umeh"
@@ -102,9 +105,9 @@ members:
     email: "Obinna.Umeh@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/obinna-umeh-2"
     orcid: "0000-0003-3398-9591"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/80978711/Linkedin.jpg"  # Optional local image
+    research_interests: [Machine Learning]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/80978711/Linkedin.jpg"
 
   - name: "Sam Youles"
     slug: "sam-youles"
@@ -112,18 +115,9 @@ members:
     email: "Samantha.Youles@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/sam-youles"
     orcid: "0000-0002-7520-5911"
-    research_interests: ""
-    bio: "Brief bio here..."
-    image: "https://researchportal.port.ac.uk/files-asset/88806483/profileMarch24.png"  # Optional local image
-
-  - name: "Toby Maule"
-    slug: "toby-maule"
-    role: "Senior Specialist Technician"
-    email: "Toby.Maule@port.ac.uk"
-    pure_url: "https://researchportal.port.ac.uk/en/persons/toby-maule"
-    research_interests: ""
-    bio: "The man with all the power."
-    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+    research_interests: [Cosmology, Sonification]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/88806483/profileMarch24.png"
 
 # Add more team members here
 # Can be populated from Pure API using their person IDs
