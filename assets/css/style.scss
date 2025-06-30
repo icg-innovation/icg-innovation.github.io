@@ -147,6 +147,42 @@
   }
 }
 
+.author-page .author-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.author-page .author-header .team-member {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  border: none;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.author-page .author-header .author-name {
+  border-bottom: none;
+  margin-bottom: 0.25rem;
+}
+
+.author-page .author-header .author-details {
+  text-align: left;
+}
+
+.author-page .author-projects {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e4e8;
+}
+
+.author-page .author-projects h2 {
+  text-align: center;
+  border-bottom: none;
+}
+
 // Partners section
 .partners-section {
   margin: 2rem 0;

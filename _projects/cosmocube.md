@@ -20,9 +20,3 @@ collaborators: []
 ## Key Features
 
 ## Technology Stack
-
-## Funders & Collaborators
-
-## Author:
-
-

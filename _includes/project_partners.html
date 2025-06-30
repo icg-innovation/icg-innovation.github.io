@@ -1,6 +1,6 @@
-{% if page.funders or page.collaborators %}
+{% if page.funders and page.funders.size > 0 or page.collaborators and page.collaborators.size > 0 %}
   <div class="project-partners">
-    {% if page.funders %}
+    {% if page.funders and page.funders.size > 0 %}
       <h4>Funded By</h4>
       <div class="logo-grid">
         {% for funder_id in page.funders %}
@@ -14,7 +14,7 @@
       </div>
     {% endif %}
 
-    {% if page.collaborators %}
+    {% if page.collaborators and page.collaborators.size > 0 %}
       <h4>In Collaboration With</h4>
       <div class="logo-grid">
         {% for collaborator_id in page.collaborators %}

@@ -10,46 +10,7 @@ Explore our research software projects supporting cosmology and astrophysics res
 <div class="projects-grid">
 {% assign display_projects = site.projects | where_exp: "item", "item.display != false" %}
 {% for project in display_projects %}
-  <div class="project-tile">
-    <div class="project-tile-text">
-      <div class="project-tile-header">
-        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        <div class="project-links">
-          {% if project.github %}
-            <a href="{{ project.github }}" class="btn btn-sm btn--outline">GitHub</a>
-          {% endif %}
-          {% if project.paper %}
-            <a href="{{ project.paper }}" class="btn btn-sm btn--outline">Paper</a>
-          {% endif %}
-          {% if project.docs %}
-            <a href="{{ project.docs }}" class="btn btn-sm btn--outline">Documentation</a>
-          {% endif %}
-        </div>
-      </div>
-      <div class="project-tile-content">
-        <p class="project-summary">{{ project.summary }}</p>
-        {% if project.funding %}
-          <p class="project-funding-tile">
-            <strong>Funding:</strong> 
-            {% if project.grant %}<a href="{{ project.grant }}" target="_blank" rel="noopener noreferrer">{{ project.funding }}</a>
-            {% else %}{{ project.funding }}{% endif %}
-          </p>
-        {% endif %}
-        {% if project.tags %}
-          <div class="project-tags">
-            {% for tag in project.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-    {% if project.image %}
-      <a href="{{ project.url | relative_url }}" class="project-image-link">
-        <img src="{{ project.image | relative_url }}" alt="{{ project.title }} preview" class="project-image">
-      </a>
-    {% endif %}
-  </div>
+  {% include project_tile.html %}
 {% endfor %}
 </div>
 

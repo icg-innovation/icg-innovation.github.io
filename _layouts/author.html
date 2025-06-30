@@ -1,44 +1,53 @@
 ---
 layout: default
 ---
+{% comment %} Find the author profile from the data file using the page title {% endcomment %}
+{% assign author_profile = site.data.team.members | where: "name", page.title | first %}
 
-<h1>{{ page.title }}</h1>
+{% comment %} Find all projects by this author that are ready to be displayed {% endcomment %}
+{% assign author_projects = site.projects | where_exp: "project", "project.authors contains page.title" | where_exp: "project", "project.display != false" %}
 
-{% if page.image %}
-  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width:150px; border-radius:50%;">
-{% endif %}
+<div class="author-page">
+  <header class="author-header">
+    {% if author_profile %}
+      <div class="team-member">
+        <div style="display: flex; align-items: center; gap: 1.5rem;">
+          {% if author_profile.image %}
+            <img src="{{ author_profile.image | relative_url }}" alt="{{ author_profile.name }}" class="team-photo">
+          {% else %}
+            <div class="team-photo-placeholder"></div>
+          {% endif %}
+          <div class="author-details">
+            <h1 class="author-name">{{ author_profile.name }}</h1>
+            <p class="team-role">{{ author_profile.role }}</p>
+            <div class="team-links">
+              <a href="mailto:{{ author_profile.email }}">Email</a>
+              {% if author_profile.pure_url %}<a href="{{ author_profile.pure_url }}" target="_blank" rel="noopener noreferrer">Pure Profile</a>{% endif %}
+              {% if author_profile.orcid %}<a href="https://orcid.org/{{ author_profile.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>{% endif %}
+            </div>
+          </div>
+        </div>
+        <p class="team-bio" style="margin-top: 1rem;">{{ author_profile.bio }}</p>
+      </div>
+    {% else %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+  </header>
 
-<p><strong>Role:</strong> {{ page.role }}</p>
+  <div class="author-projects">
+    <h2>Projects</h2>
+    {% if author_projects.size > 0 %}
+      <div class="projects-grid">
+        {% for project in author_projects %}
+          {% include project_tile.html %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>{{ page.title }} is not yet associated with any public projects.</p>
+    {% endif %}
+  </div>
+</div>
 
-{% if page.bio %}
-  <p>{{ page.bio }}</p>
-{% endif %}
-
-{% if page.research_interests %}
-  <p><strong>Research Interests:</strong> {{ page.research_interests }}</p>
-{% endif %}
-
-<ul>
-  {% if page.email %}
-    <li>Email: <a href="mailto:{{ page.email }}">{{ page.email }}</a></li>
-  {% endif %}
-  {% if page.pure_url %}
-    <li>Pure profile: <a href="{{ page.pure_url }}">{{ page.pure_url }}</a></li>
-  {% endif %}
-  {% if page.orcid %}
-    <li>ORCID: <a href="https://orcid.org/{{ page.orcid }}">https://orcid.org/{{ page.orcid }}</a></li>
-  {% endif %}
-</ul>
-
-<hr>
-
-<h2>Projects by {{ page.title }}</h2>
-<ul>
-  {% assign projects = site.pages | concat: site.projects %}
-  {% assign authored_projects = projects | where_exp: "proj", "proj.authors contains page.title" %}
-  {% for project in authored_projects %}
-    <li>
-      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<footer class="project-footer">
+  <a href="{{ '/about/' | relative_url }}">← Back to Team Page</a>
+</footer>

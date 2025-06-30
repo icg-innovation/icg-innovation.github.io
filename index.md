@@ -12,36 +12,7 @@ We are the Research Software Engineering team at the Institute of Cosmology and 
 <div class="projects-grid">
 {% assign featured_projects = site.projects | where: "featured", true | sort: "featured_order" %}
 {% for project in featured_projects limit:4 %}
-  <div class="project-tile">
-    <div class="project-tile-text">
-      <div class="project-tile-header">
-        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        <div class="project-links">
-          {% if project.github %}
-            <a href="{{ project.github }}" class="btn btn-sm btn--outline">GitHub</a>
-          {% endif %}
-          {% if project.paper %}
-            <a href="{{ project.paper }}" class="btn btn-sm btn--outline">Paper</a>
-          {% endif %}
-        </div>
-      </div>
-      <div class="project-tile-content">
-        <p class="project-summary">{{ project.summary }}</p>
-        {% if project.funding %}
-          <p class="project-funding-tile">
-            <strong>Funding:</strong> 
-            {% if project.grant %}<a href="{{ project.grant }}" target="_blank" rel="noopener noreferrer">{{ project.funding }}</a>
-            {% else %}{{ project.funding }}{% endif %}
-          </p>
-        {% endif %}
-      </div>
-    </div>
-    {% if project.image %}
-      <a href="{{ project.url | relative_url }}" class="project-image-link">
-        <img src="{{ project.image | relative_url }}" alt="{{ project.title }} preview" class="project-image">
-      </a>
-    {% endif %}
-  </div>
+  {% include project_tile.html %}
 {% endfor %}
 </div>
 
