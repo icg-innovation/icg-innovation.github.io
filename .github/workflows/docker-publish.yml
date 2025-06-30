@@ -3,7 +3,7 @@ name: Build and Publish Docker image
 on:
   push:
     branches:
-      - main    # or your default branch
+      - 2025-update
   workflow_dispatch:    # allows manual triggering
 
 permissions:
