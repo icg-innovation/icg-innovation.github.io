@@ -1,5 +1,5 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gemspec
+# gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.2"
+gem "jekyll-theme-cayman"

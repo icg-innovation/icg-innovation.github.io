@@ -1,38 +1,48 @@
 # _plugins/generate_authors.rb
 
 module Jekyll
+    class AuthorPage < Page
+      def initialize(site, base, dir, member)
+        @site = site
+        @base = base
+        @dir = dir       # e.g. 'author/andy-berry'
+        @name = 'index.html'
+
+        self.process(@name)
+        self.read_yaml(File.join(base, '_layouts'), 'author.html')
+
+        self.data['title'] = member['name']
+        self.data['slug'] = member['slug']
+        self.data['role'] = member['role']
+        self.data['email'] = member['email']
+        self.data['pure_url'] = member['pure_url']
+        self.data['orcid'] = member['orcid']
+        self.data['bio'] = member['bio']
+        self.data['image'] = member['image']
+        self.data['research_interests'] = member['research_interests']
+      end
+    end
+
     class AuthorPageGenerator < Generator
       safe true
-  
+
       def generate(site)
-        # Loop over each team member from the data file
-        site.data["team"]["members"].each do |member|
-          # Build a slug
-          slug = member["name"].downcase.strip.gsub(" ", "-").gsub(/[^\w-]/, "")
-          
-          # Create a new document for the collection
-          author_doc = Jekyll::Document.new(
-            File.join(site.source, "_authors", "#{slug}.md"),
-            site: site,
-            collection: site.collections["authors"]
-          )
-  
-          # Front matter for the author page
-          author_doc.data["layout"] = "author"
-          author_doc.data["title"] = member["name"]
-          author_doc.data["slug"] = slug
-          author_doc.data["role"] = member["role"]
-          author_doc.data["email"] = member["email"]
-          author_doc.data["pure_url"] = member["pure_url"]
-          author_doc.data["orcid"] = member["orcid"]
-          author_doc.data["bio"] = member["bio"]
-          author_doc.data["image"] = member["image"]
-          author_doc.data["research_interests"] = member["research_interests"]
-  
-          # Save it into the collection
-          site.collections["authors"].docs << author_doc
+        team_data = site.data.dig('team', 'members')
+        if team_data.nil? || !team_data.is_a?(Array) || team_data.empty?
+          Jekyll.logger.warn "Author Generator:", "No team members found in _data/team.yml"
+          return
+        end
+
+        team_data.each do |member|
+          next unless member['slug'] && !member['slug'].empty?
+
+          slug = member['slug']
+          dir = File.join('author', slug)
+
+          Jekyll.logger.info "Author Generator:", "Generating author page for #{member['name']} at /#{dir}/"
+
+          site.pages << AuthorPage.new(site, site.source, dir, member)
         end
       end
     end
   end
-  
