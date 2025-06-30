@@ -199,6 +199,12 @@
   }
 }
 
+.project-authors {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e4e8;
+}
+
 .project-meta {
   margin: 1.5rem 0;
   color: #586069;
@@ -206,6 +212,17 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.project-partners {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e4e8;
+
+  h4 {
+    text-align: center;
+    color: #586069;
+  }
 }
 
 .post-footer, .project-footer {

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Gravitational Waves at the University of Portsmouth
+display: true
 featured: false
 summary: Developing faster and more sensitive methods to detect and analyse gravitational waves from cosmic collisions, enabling discoveries in multi-messenger astronomy and improving our understanding of extreme astrophysical phenomena.
 funding: "Supported by the Science and Technology Facilities Council"
@@ -9,6 +10,9 @@ github:
 paper:
 image: /assets/images/projects/test4_preview.jpg
 tags: [Gravitational Waves, python, high-performance computing]
+authors: ["Gareth Cabourn Davies"]
+funders: []
+collaborators: []
 ---
 
 **Abstract**

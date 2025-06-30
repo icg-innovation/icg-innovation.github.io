@@ -104,6 +104,14 @@ members:
     research_interests: ""
     bio: "Brief bio here..."
     image: "https://researchportal.port.ac.uk/files-asset/88806483/profileMarch24.png"  # Optional local image
+  
+  - name: "Toby Maule"
+    role: "Senior Specialist Technician"
+    email: "Toby.Maule@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/toby-maule"
+    research_interests: ""
+    bio: "The man with all the power."
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
 # Add more team members here
 # Can be populated from Pure API using their person IDs

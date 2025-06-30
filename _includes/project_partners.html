@@ -1,0 +1,31 @@
+{% if page.funders or page.collaborators %}
+  <div class="project-partners">
+    {% if page.funders %}
+      <h4>Funded By</h4>
+      <div class="logo-grid">
+        {% for funder_id in page.funders %}
+          {% assign partner = site.data.funders | where: "id", funder_id | first %}
+          {% if partner %}
+            <a href="{{ partner.url }}" class="logo-item" target="_blank" rel="noopener noreferrer" title="{{ partner.name }}">
+              <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }} Logo">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.collaborators %}
+      <h4>In Collaboration With</h4>
+      <div class="logo-grid">
+        {% for collaborator_id in page.collaborators %}
+          {% assign partner = site.data.collaborators | where: "id", collaborator_id | first %}
+          {% if partner %}
+            <a href="{{ partner.url }}" class="logo-item" target="_blank" rel="noopener noreferrer" title="{{ partner.name }}">
+              <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }} Logo">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

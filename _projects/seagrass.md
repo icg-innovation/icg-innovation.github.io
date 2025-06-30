@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Detecting Seagrass Change
+display: true
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Lorenza Nanni"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

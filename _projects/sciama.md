@@ -1,6 +1,7 @@
 ---
 layout: project
 title: SCIAMA
+display: true
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Toby Maule", "Xan Morice-Atkinson"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Identifying Wrist Fractures
+display: true
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Christopher Pattison", "Xan Morice-Atkinson"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

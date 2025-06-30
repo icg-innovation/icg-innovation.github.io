@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Zooniverse
+display: true
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Coleman Krawczyk"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

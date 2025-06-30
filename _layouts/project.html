@@ -26,7 +26,7 @@ layout: default
   <div class="project-meta">
     {% if page.funding %}
       <div class="project-funding">
-        <strong>Funding:</strong> 
+        <strong>Funding:</strong>
         {% if page.grant %}<a href="{{ page.grant }}" target="_blank" rel="noopener noreferrer">{{ page.funding }}</a>
         {% else %}{{ page.funding }}{% endif %}
       </div>
@@ -43,7 +43,35 @@ layout: default
 
   <div class="project-content">
     {{ content }}
+    {% include project_partners.html %}
   </div>
+
+  {% if page.authors and page.authors.size > 0 %}
+    <div class="project-authors">
+      <h2>Research Team</h2>
+      <div class="team-grid">
+        {% for author_name in page.authors %}
+          {% assign author_profile = site.data.team.members | where: "name", author_name | first %}
+          {% if author_profile %}
+            <div class="team-member">
+              {% if author_profile.image %}
+                <img src="{{ author_profile.image | relative_url }}" alt="{{ author_profile.name }}" class="team-photo">
+              {% else %}
+                <div class="team-photo-placeholder"></div>
+              {% endif %}
+              <h3>{{ author_profile.name }}</h3>
+              <p class="team-role">{{ author_profile.role }}</p>
+              <p class="team-bio">{{ author_profile.bio }}</p>
+              <div class="team-links">
+                <a href="mailto:{{ author_profile.email }}">Email</a>
+                {% if author_profile.pure_url %}<a href="{{ author_profile.pure_url }}" target="_blank" rel="noopener noreferrer">Pure Profile</a>{% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
 
   <footer class="project-footer">
     <a href="{{ '/projects/' | relative_url }}">← Back to all projects</a>

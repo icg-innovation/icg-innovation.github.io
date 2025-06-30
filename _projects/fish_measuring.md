@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Measuring Fish
+display: true
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Obinna Umeh"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

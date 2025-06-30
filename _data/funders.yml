@@ -1,0 +1,28 @@
+- id: ukri
+  name: "UK Research and Innovation"
+  url: "https://www.ukri.org/"
+  logo: "/assets/images/logos/ukri_logo.png"
+- id: stfc
+  name: "Science and Technology Facilities Council"
+  url: "https://stfc.ukri.org/"
+  logo: "/assets/images/logos/stfc_logo.png"
+- id: erc
+  name: "European Research Council"
+  url: "https://erc.europa.eu/"
+  logo: "/assets/images/logos/erc_logo.png"
+- id: esa
+  name: "European Space Agency"
+  url: "https://www.esa.int/"
+  logo: "/assets/images/logos/esa_logo.png"
+- id: uksa
+  name: "UK Space Agency"
+  url: "https://www.gov.uk/government/organisations/uk-space-agency"
+  logo: "/assets/images/logos/uksa_logo.png"
+- id: esrc
+  name: "Economic and Social Research Council"
+  url: "https://www.ukri.org/councils/esrc/"
+  logo: "/assets/images/logos/esrc_logo.png"
+- id: epsrc
+  name: "Engineering and Physical Sciences Research Council"
+  url: "https://www.ukri.org/councils/epsrc/"
+  logo: "/assets/images/logos/epsrc_logo.png"

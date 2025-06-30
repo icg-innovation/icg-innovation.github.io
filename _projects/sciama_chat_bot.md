@@ -1,6 +1,7 @@
 ---
 layout: project
 title: SCIAMA ChatBot
+display: true
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Obinna Umeh", "Toby Maule"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

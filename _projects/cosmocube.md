@@ -1,6 +1,7 @@
 ---
 layout: project
 title: CosmoCube
+display: false
 featured: false
 summary:
 github:
@@ -9,6 +10,9 @@ funding:
 image:
 grant:
 tags: []
+authors: []
+funders: []
+collaborators: []
 ---
 
 ## Overview

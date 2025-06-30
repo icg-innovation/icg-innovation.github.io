@@ -1,6 +1,7 @@
 ---
 layout: project
 title: G.A.R.E.T.H - Gravitational Analysis & Reponse Engineering with Tactile Haptics
+display: true
 featured: true
 featured_order: 4
 summary:
@@ -10,6 +11,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Gareth Cabourn Davies"]
+funders: []
+collaborators: []
 ---
 
 ## Overview

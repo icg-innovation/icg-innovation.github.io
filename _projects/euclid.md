@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Euclid
+display: true
 featured: true
 featured_order: 2
 summary:
@@ -10,6 +11,9 @@ funding:
 image:
 grant:
 tags: []
+authors: ["Sam Youles", "Christopher Pattison", "Ricardo Giorgetti Landim"]
+funders: [esa, uksa]
+collaborators: []
 ---
 
 ## Overview
@@ -17,9 +21,3 @@ tags: []
 ## Key Features
 
 ## Technology Stack
-
-## Funders & Collaborators
-
-## Author:
-
-

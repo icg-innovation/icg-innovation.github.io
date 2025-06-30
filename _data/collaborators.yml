@@ -1,0 +1,8 @@
+- id: uop
+  name: "University of Portsmouth"
+  url: "https://www.port.ac.uk/"
+  logo: "/assets/images/logos/uop_logo.png"
+- id: helyx
+  name: "Helyx"
+  url: "https://www.helyx.co.uk/"
+  logo: "/assets/images/logos/helyx_logo.jpg"
