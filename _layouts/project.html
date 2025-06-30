@@ -19,6 +19,10 @@ layout: default
         {% if page.docs %}
           <a href="{{ page.docs }}" class="btn btn--outline">Documentation</a>
         {% endif %}
+        {% if page.article %}
+          <a href="{{ page.article }}" class="btn btn--outline">Press Article</a>
+        {% endif %}
+
       </div>
     {% endif %}
   </header>
@@ -61,10 +65,8 @@ layout: default
               {% endif %}
               <h3>{{ author_profile.name }}</h3>
               <p class="team-role">{{ author_profile.role }}</p>
-              <p class="team-bio">{{ author_profile.bio }}</p>
               <div class="team-links">
-                <a href="mailto:{{ author_profile.email }}">Email</a>
-                {% if author_profile.pure_url %}<a href="{{ author_profile.pure_url }}" target="_blank" rel="noopener noreferrer">Pure Profile</a>{% endif %}
+                <a href="/author/{{ author_profile.slug}}/">Profile</a>
               </div>
             </div>
           {% endif %}

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: SCIAMA ChatBot
-display: true
+display: false
 featured: false
 summary:
 github:

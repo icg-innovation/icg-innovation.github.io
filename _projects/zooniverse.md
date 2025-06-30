@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Zooniverse
-display: true
+display: false
 featured: false
 summary:
 github:

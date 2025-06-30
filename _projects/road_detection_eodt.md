@@ -2,13 +2,14 @@
 layout: project
 title: Road Detection EODT
 display: true
-featured: false
+featured: true
+featured_order: 2
 summary: Detecting roads from satellite imagery using state-of-the-art computer vision models.
 github: https://github.com/icg-innovation/new-simulation-tool
 paper: https://road_paper.com
 funding: Supported by Arthur Tolley
 grant: https://grant.com
-image: /assets/images/projects/test2_preview.jpg
+image: /assets/images/projects/road_detection/detection.png
 tags: [python, machine learning, computer vision]
 authors: ["Arthur Tolley"]
 funders: [esa]

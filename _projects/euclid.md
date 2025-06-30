@@ -1,9 +1,8 @@
 ---
 layout: project
 title: Euclid
-display: true
-featured: true
-featured_order: 2
+display: false
+featured: false
 summary:
 github:
 paper:

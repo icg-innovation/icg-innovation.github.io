@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Identifying Wrist Fractures
-display: true
+display: false
 featured: false
 summary:
 github:

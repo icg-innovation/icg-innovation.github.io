@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Danedelion
-display: true
+display: false
 featured: false
 summary:
 github:

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: STRAUSS
-display: true
+display: false
 featured: false
 summary:
 github:

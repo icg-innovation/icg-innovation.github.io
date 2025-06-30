@@ -19,7 +19,7 @@ The ICG Research Software Engineering team's work is supported by various fundin
 
 ## Collaborating Institutions
 
-We collaborate with research institutions worldwide.
+We collaborate with organisations worldwide.
 
 <div class="logo-grid">
   {% for collaborator in site.data.collaborators %}

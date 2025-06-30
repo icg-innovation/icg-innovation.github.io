@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Measuring Fish
-display: true
+display: false
 featured: false
 summary:
 github:

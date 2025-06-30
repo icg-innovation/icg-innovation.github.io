@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Detecting Seagrass Change
-display: true
+display: false
 featured: false
 summary:
 github:

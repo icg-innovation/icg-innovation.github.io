@@ -1,7 +1,7 @@
 ---
 layout: project
 title: SCIAMA
-display: true
+display: false
 featured: false
 summary:
 github:
