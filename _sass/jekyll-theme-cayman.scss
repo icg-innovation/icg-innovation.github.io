@@ -536,7 +536,8 @@ a {
       width: 35%;
       align-items: center;
       justify-content: center;
-      background: #f2f2f2;
+      background: rgba(0, 0, 0, 0.03);
+      border-left: 1px solid $border-color;
     }
 
     .project-image {
@@ -544,7 +545,7 @@ a {
       height: auto;
       object-fit: cover;
       display: block;
-      border-left: 1px solid $border-color;
+    //   border-left: 3px solid $border-color;
     }
 
     @include small {
