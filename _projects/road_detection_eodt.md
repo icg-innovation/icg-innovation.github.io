@@ -1,8 +1,7 @@
 ---
 layout: project
 title: Road Detection EODT
-featured: true
-featured_order: 2
+featured: false
 summary: Detecting roads from satellite imagery using state-of-the-art computer vision models.
 github: https://github.com/icg-innovation/new-simulation-tool
 image: /assets/images/projects/test2_preview.jpg

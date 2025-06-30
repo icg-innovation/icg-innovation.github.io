@@ -146,23 +146,22 @@ a {
 .header-logo {
   position: absolute;
   height: auto;
+  top: 50%;
+  transform: translateY(-50%);
 
   @include large {
     left: 3rem;
-    top: 2rem;
-    width: 80px;
+    width: 100px;
   }
 
   @include medium {
     left: 2rem;
-    top: 1.5rem;
-    width: 60px;
+    width: 80px;
   }
 
   @include small {
     left: 1rem;
-    top: 1rem;
-    width: 40px;
+    width: 50px;
   }
 }
 

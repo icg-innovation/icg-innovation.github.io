@@ -1,11 +1,12 @@
 ---
 layout: project
 title: Gravitational Waves at the University of Portsmouth
-featured: true
-featured_order: 4
+featured: false
 summary: Developing faster and more sensitive methods to detect and analyse gravitational waves from cosmic collisions, enabling discoveries in multi-messenger astronomy and improving our understanding of extreme astrophysical phenomena.
 funding: "Supported by the Science and Technology Facilities Council"
 grant: https://gtr.ukri.org/projects?ref=ST%2FY005260%2F1
+github:
+paper:
 image: /assets/images/projects/test4_preview.jpg
 tags: [Gravitational Waves, python, high-performance computing]
 ---
