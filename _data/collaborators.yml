@@ -1,0 +1,21 @@
+- id: uop
+  name: "University of Portsmouth"
+  url: "https://www.port.ac.uk/"
+  logo: "/assets/images/logos/uop_logo.png"
+- id: helyx
+  name: "Helyx"
+  url: "https://www.helyx.co.uk/"
+  logo: "/assets/images/logos/helyx_logo.jpg"
+- id: space_south_central
+  name: "Space South Central"
+  url: "https://www.spacesouthcentral.com/"
+  logo: "/assets/images/logos/space_south_central_black_logo.png"
+  featured: true
+- id: uni_southampton
+  name: "University of Southampton"
+  url: "https://www.southampton.ac.uk/"
+  logo: "/assets/images/logos/uni_of_southampton_logo.png"
+- id: uni_surrey
+  name: "University of Surrey"
+  url: "https://www.surrey.ac.uk/"
+  logo: "/assets/images/logos/uni_of_surrey_logo.png"
