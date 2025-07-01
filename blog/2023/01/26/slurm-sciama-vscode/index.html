@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Slurm, Sciama, and VS Code | Research Software Engineering @ ICG</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Slurm, Sciama, and VS Code" />
+<meta name="author" content="ICG RSE Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This post is a guide to getting VS Code to work with Slurm + Sciama. This is useful because then you can use VS Code to interactively develop on the HPC cluster’s compute nodes, as we are not allowed to run VS Code on the login node." />
+<meta property="og:description" content="This post is a guide to getting VS Code to work with Slurm + Sciama. This is useful because then you can use VS Code to interactively develop on the HPC cluster’s compute nodes, as we are not allowed to run VS Code on the login node." />
+<meta property="og:site_name" content="Research Software Engineering @ ICG" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-26T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Slurm, Sciama, and VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ICG RSE Team"},"dateModified":"2023-01-26T00:00:00+00:00","datePublished":"2023-01-26T00:00:00+00:00","description":"This post is a guide to getting VS Code to work with Slurm + Sciama. This is useful because then you can use VS Code to interactively develop on the HPC cluster’s compute nodes, as we are not allowed to run VS Code on the login node.","headline":"Slurm, Sciama, and VS Code","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2023/01/26/slurm-sciama-vscode/"},"url":"/blog/2023/01/26/slurm-sciama-vscode/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <a href="/"><img src="/assets/images/logos/uop_logo_white.png" alt="University of Portsmouth Logo" class="header-logo"></a>
+      <h1 class="project-name">Slurm, Sciama, and VS Code</h1>
+      <!-- <h2 class="project-tagline">The Research Software Engineering team at the Institute of Cosmology and Gravitation</h2> -->
+      <nav class="main-nav">
+        <a href="/" class="btn">Home</a>
+        <a href="/blog/" class="btn">Blog</a>
+        <a href="/projects/" class="btn">Projects</a>
+        <a href="/funding/" class="btn">Funding & Collaborators</a>
+        <a href="/about/" class="btn">About</a>
+        
+      </nav>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Slurm, Sciama, and VS Code</h1>
+    <p class="post-meta">
+      <time datetime="2023-01-26T00:00:00+00:00">January 26, 2023</time>
+      
+       • slurm, sciama, vscode
+    </p>
+  </header>
+
+  <div class="post-content">
+    <p>This post is a guide to getting VS Code to work with Slurm + Sciama. This is useful because then you can use VS Code to interactively develop on the HPC cluster’s compute nodes, as we are not allowed to run VS Code on the login node.</p>
+
+<h2 id="what-are-slurm-sciama-and-vs-code">What are Slurm, Sciama, and VS Code?</h2>
+
+<p>Slurm is a job scheduler that allows you to submit jobs to the cluster. It’s a bit like a queueing system, but it’s a bit more complicated than that. You can find out more about Slurm <a href="https://slurm.schedmd.com/overview.html">here</a>.</p>
+
+<p>Sciama is the University of Portsmouth’s HPC cluster. It’s a cluster of 1000s of compute cores, and multiple GPUs. You can find out more about Sciama <a href="">here</a>.</p>
+
+<p>VS Code is a code editor that is very popular with developers. It’s free, open source, and has a lot of useful features. You can find out more about VS Code <a href="https://code.visualstudio.com/">here</a>.</p>
+
+<h2 id="what-is-the-principle-behind-this">What is the principle behind this?</h2>
+
+<p><em>The RemoteCommand</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  RemoteCommand srun -n 1 -c 4 -p gpu.q -J vscode_server_${USER} --time=24:00:00 --gres=gpu:1g.5gb:1 --nodelist gpu02 -K sh -c 'module load anaconda3/2022.05 &amp;&amp; exec /bin/bash --login'
+</code></pre></div></div>
+
+<p>The RemoteCommand is a command that will be run on the remote machine. In this case, it’s a command that will run on the compute node.
+These are all fairly standard srun arguments until the -K, which is <a href="https://slurm.schedmd.com/srun.html#OPT_kill-on-bad-exit">–kill-on-bad-exit</a>, and tells Slurm to kill the job if the connection is lost. This is important because if you close VS Code without disconnecting, the job will still be running on the cluster, and you’ll have to kill it manually. Then there’s some odd stuff happening affter that, and it basically just loads Anaconda and starts a bash shell.</p>
+
+<h2 id="instructions-for-mac">Instructions for Mac</h2>
+
+<p>Requirements: VSCode (v1.74.3 as of writing), and the Remote Development extension pack.</p>
+
+<p>Next, you’ll need to set up your SSH config file. This is where you’ll define the hosts you want to connect to. I have a file called <code class="language-plaintext highlighter-rouge">~/.ssh/config</code> that looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
+
+Host cluster
+    HostName cluster.example.com
+    User username
+    IdentityFile ~/.ssh/id_rsa
+</code></pre></div></div>
+
+<p>(You can find more information about the SSH config file <a href="https://linuxize.com/post/using-the-ssh-config-file/">here</a>.)</p>
+
+<p>So we don’t run vscode on the login-node, we’ll have to ProxyJump to the compute node. To do this, we’ll need to add the following to our SSH config file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host cluster
+    HostName cluster.example.com
+    User username
+    IdentityFile ~/.ssh/id_rsa
+    ProxyJump login-node
+</code></pre></div></div>
+
+<p>Finally, we’ll need to add a RemoteCommand to run vscode on the compute node. To do this, we’ll need to do two things:</p>
+
+<p>1) Turn on the Enable Remote Command setting in the VSCode settings.
+2) Add the following to our SSH config file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host cluster
+    HostName cluster.example.com
+    User username
+    IdentityFile ~/.ssh/id_rsa
+    ProxyJump login-node
+    RemoteCommand srun -n 1 -c 4 -p gpu.q -J vscode_server_${USER} --time=24:00:00 --gres=gpu:1g.5gb:1 --nodelist gpu02 -K /bin/bash --login
+</code></pre></div></div>
+<p> </p>
+
+<p>Now, you can connect to the cluster by opening the Command Palette (⇧⌘P) and typing “Remote-SSH: Connect to Host…”. Select “cluster” from the list, and you should be connected.</p>
+
+<p>Once you’re connected, you can open a folder on the cluster by opening the Command Palette (⇧⌘P) and typing “Remote-SSH: Open Folder…”. Select the folder you want to open, and you should be good to go.</p>
+
+<p>Note: If you’re using a password to connect to the cluster, you’ll need to add the <code class="language-plaintext highlighter-rouge">PasswordAuthentication yes</code> option to your SSH config file. You can also add the <code class="language-plaintext highlighter-rouge">ForwardAgent yes</code> option to forward your local SSH agent to the remote machine, which will allow you to use your local SSH keys to authenticate with the cluster.</p>
+
+<h2 id="instructions-for-windows">Instructions for Windows</h2>
+<hr />
+
+<p>Objective Reminder: To be able to connect to a <em>slurm allocated</em> compute node using VS Code by proxying through the login node, with SSH credentials passing all the way through.</p>
+
+<p>Requirements: PuTTY (Pageant and PuTTYgen <strong>from the Microsoft Store and not AppsAnywhere if using a University issued laptop!</strong>), OpenSSH for Windows (comes with Windows 10 or 11), Latest VSCode (v1.74.3 as of writing) with the Remote Development extension pack.</p>
+
+<p>Firstly, this is not as easy as it should be for a number of reasons. This process will be easier if you check that these two settings are enabled first:</p>
+
+<p>1) Enable viewing hidden files and folders in File Explorer. Files or folders that start with a full stop (.) are hidden by default.  See here for instructions: https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-10-97fbc472-c603-9d90-91d0-1166d1d9f4b5
+2) Enable viewing file extensions in File Explorer. See here for instructions: https://support.microsoft.com/en-us/windows/view-file-name-extensions-12b036fd-8ae3-9aaf-8b4e-60d24b4e9efb</p>
+
+<p>NOTE: I did get this to work by swapping to use the SSH version that comes with Git for Windows, but I know the University supports PuTTY everywhere so I’m going to stick with that.</p>
+
+<h3 id="step-1-create-a-key-pair">Step 1: Create a key pair</h3>
+<hr />
+<p>To use VS Code with Sciama, you’ll need to either find your existing ssh key pair, or generate a key pair. If you’ve ever connected to the cluster before then you will have created a key already. Keys are normally kept in the <code class="language-plaintext highlighter-rouge">~/.ssh/</code> folder a.k.a <code class="language-plaintext highlighter-rouge">C:/Users/Username/.ssh/</code> on Windows. To do this, open PuTTYgen and click “Generate”. Move your mouse around the window to generate some random data. Once you have enough data, click “Save private key” and save the key to <code class="language-plaintext highlighter-rouge">C:\Users\Username\.ssh\id_rsa</code>. Then, click “Save public key” and save the key to <code class="language-plaintext highlighter-rouge">C:\Users\Username\.ssh\id_rsa.pub</code>.</p>
+
+<h3 id="step-2-check-the-key-is-in-the-right-format">Step 2: Check the key is in the right format</h3>
+<hr />
+<p>We need this key in PuTTY format (has a file extension of “.ppk”). It’s normally saved like this by default, but if it isn’t, you can convert it by opening PuTTYgen and clicking “Load” and selecting the key you just saved. Then, click “Save private key” and save the key to <code class="language-plaintext highlighter-rouge">C:\Users\Username\.ssh\id_rsa.ppk</code>.</p>
+
+<h3 id="step-3-configure-pageant">Step 3: Configure Pageant</h3>
+<hr />
+<p>Pageant is an ssh-agent for Windows. It allows you to use your local SSH keys to authenticate with the cluster, but more importantly, remember your password so you don’t have to type it in every time you connect. You will have to enter your password if you restart your computer, if Pageant crashes/is closed, or if you haven’t used it for a while.</p>
+
+<p>We can configure Pageant to load our private key at startup, and to create the config file that allows OpenSSH to use Pageant to authenticate with the cluster.</p>
+
+<p>To do this:
+1) Open the Start menu, right click “Pageant”, and choose Open file location.
+2) Right click “Pageant” and choose Properties.
+3) Make the Target field look like this: <code class="language-plaintext highlighter-rouge">"C:\Program Files\PuTTY\pageant.exe" C:\Users\Username\.ssh\id_rsa.ppk --openssh-config %USERPROFILE%/.ssh/pageant.conf</code> where the syntax is <code class="language-plaintext highlighter-rouge">pageant.exe &lt;key1&gt; --openssh-config &lt;config file&gt;</code>.</p>
+
+<h3 id="step-4-add-pageant-to-startup-optional">Step 4: Add Pageant to startup (optional)</h3>
+<hr />
+<p>For an ssh-agent to be worth using, it should be more of a background process that you don’t think about, so we need Pageant to run on startup. To do this, we’ll need to create a modified shortcut to Pageant and put it in the startup folder.</p>
+
+<p>Press Win+R and type <code class="language-plaintext highlighter-rouge">shell:startup</code>. Copy the Pageant shortcut into this folder and it will be run on startup. However, this may get annoying so you may just want to run it manually when you need it.</p>
+
+<h3 id="step-5-configure-openssh">Step 5: Configure OpenSSH</h3>
+<hr />
+<p>Open the Command Palette (ctrl+shift+p) and type “Remote-SSH:Open SSH Configuration File…”. Open the one located at C:\Users\Username.ssh\config, and if it doesn’t exist, create it.</p>
+
+<p>Then paste this into the file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Include C:/Users/Username/.ssh/pageant.conf
+
+Host sciama-login
+  HostName login3.sciama.icg.port.ac.uk
+  ForwardAgent yes
+  RequestTTY yes
+  User moricex
+
+Host sciama-gpu02
+  HostName gpu02
+  ProxyJump sciama-login
+  RequestTTY yes
+  ForwardAgent yes
+  RemoteCommand srun -n 1 -c 4 -p gpu.q -J vscode_server_${USER} --time=24:00:00 --gres=gpu:1g.5gb:1 --nodelist gpu02 -K sh -c 'module load anaconda3/2022.05 &amp;&amp; exec /bin/bash --login'
+  User moricex
+</code></pre></div></div>
+<p>You will need to change the User field to your username. The you can set the Host field to whatever name you like, but the HostName field has to be an actual hostname on sciama, like gpu02, or node147.</p>
+
+<p>NOTE: It is important that the Include statement is at the top of the file, otherwise it won’t work.</p>
+
+<h3 id="step-6-configure-vs-code">Step 6: Configure VS Code</h3>
+<hr />
+<p>Open the Command Palette (ctrl+shift+p) and type “Open Settings (JSON)”. This will open the settings.json file.</p>
+
+<p>Set/Add these particular settings:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    "remote.SSH.enableRemoteCommand": true,
+    "remote.SSH.useLocalServer": true,
+    "remote.SSH.maxReconnectionAttempts": 0,
+</code></pre></div></div>
+<p>Alternatively, you could open settings and search for “SSH” and set these settings there.</p>
+
+<h3 id="step-7-connect-to-the-cluster">Step 7: Connect to the cluster</h3>
+<hr />
+<p>Press the Green &lt;&gt; button in the bottom left corner, or open the Command Palette (ctrl+shift+p) and type “Remote-SSH: Connect to Host…”. Select “sciama-gpu02” from the list, and you should connect.</p>
+
+<hr />
+<h2 id="instructions-for-linux">Instructions for Linux</h2>
+<hr />
+<p>Testing on CentOS 7 now.</p>
+
+<hr />
+<p>If you have any questions or comments, feel free to reach out to me on Twitter or email.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <a href="/blog/">← Back to all posts</a>
+  </footer>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 ICG Innovation. All rights reserved.</p>
+      <p>Last updated: 01 Jul 2025, 07:48</p>
+    </footer>
+  </body>
+</html>
