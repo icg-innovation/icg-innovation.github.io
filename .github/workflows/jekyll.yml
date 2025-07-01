@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches:
-      - 2025-update  # or your default branch
+      - publish # GitHub Pages to track the main branch
 
 jobs:
   build-deploy:
