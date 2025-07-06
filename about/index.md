@@ -75,4 +75,4 @@ For collaborations, questions, or more information about our work:
 
 Email: [icg-rse-group@port.ac.uk](mailto:icg-rse-group@port.ac.uk)
 
-GitHub: [github.com/icg-innovation](https://github.com/icg-innovation)
+GitHub: [github.com/icg-innovation](https://github.com/icg-rse)

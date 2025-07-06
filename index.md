@@ -51,4 +51,4 @@ We are the Research Software Engineering team at the Institute of Cosmology and 
 
 ## Get in Touch
 
-Interested in collaborating or learning more about our work? [Contact us](/about/) or explore our [GitHub repositories](https://github.com/icg-innovation).
+Interested in collaborating or learning more about our work? Contact us or explore our GitHub repositories.
