@@ -5,7 +5,7 @@ display: true
 featured: true
 featured_order: 1
 summary: "A conversational AI dashboard for exploring historical and statistical data through natural language interaction"
-github: "https://github.com/icg-innovation/vobchat"
+github: "https://github.com/icg-rse/vobchat"
 paper: "https://www.test_vobchat_paper.com"
 funding: "Supported by the Economic and Social Research Council"
 image: /assets/images/projects/test3_preview.jpg

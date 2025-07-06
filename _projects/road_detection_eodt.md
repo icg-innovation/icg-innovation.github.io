@@ -5,7 +5,7 @@ display: true
 featured: true
 featured_order: 2
 summary: Detecting roads from satellite imagery using state-of-the-art computer vision models.
-github: https://github.com/icg-innovation/new-simulation-tool
+github: https://github.com/icg-rse/new-simulation-tool
 paper: https://road_paper.com
 funding: Supported by Arthur Tolley
 grant: https://grant.com
