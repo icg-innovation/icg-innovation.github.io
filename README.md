@@ -2,7 +2,7 @@
 
 This repository hosts the official GitHub Pages website for ICG Innovation. It serves as a central hub for showcasing our projects, initiatives, and resources.
 
-You can visit the live site here: https://icg-innovation.github.io
+You can visit the live site here: https://icg-rse.github.io
 
 ## About
 
