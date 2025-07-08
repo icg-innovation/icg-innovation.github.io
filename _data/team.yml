@@ -18,9 +18,9 @@ members:
     email: "Gareth.Cabourn-Davies@port.ac.uk"
     pure_url: "https://researchportal.port.ac.uk/en/persons/gareth-cabourn-davies"
     orcid: "0000-0002-4289-3439"
-    research_interests: [Gravitational Waves]
-    bio: It's your boy
-    image: "https://researchportal.port.ac.uk/files-asset/26555480/profilepic.jpg"
+    research_interests: [Gravitational Waves, Data Science, Software Maintenance]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/106085434/BalconyProfile.JPG"
 
   - name: "Maxime Deckers"
     slug: "maxime-deckers"
