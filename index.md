@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Research Software Engineering @ ICG
+title: Innovation @ ICG
 ---
 
-## Welcome to ICG Research Software Engineering!
+## Welcome to ICG Innovation!
 
-We are the Research Software Engineering team at the Institute of Cosmology and Gravitation (ICG), University of Portsmouth. We develop cutting-edge software solutions to support cosmological and astrophysical research.
+Welcome to Innovation at the Institute of Cosmology and Gravitation (ICG), University of Portsmouth.
 
 ## Featured Projects
 

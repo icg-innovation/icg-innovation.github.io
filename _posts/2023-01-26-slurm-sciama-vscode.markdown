@@ -2,6 +2,7 @@
 layout: post
 title:  "Slurm, Sciama, and VS Code"
 date: 2023-01-26
+author: "Xan Morice-Atkinson"
 categories: slurm sciama vscode
 ---
 

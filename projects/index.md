@@ -5,7 +5,7 @@ title: Projects
 
 # Projects
 
-Explore our research software projects supporting cosmology and astrophysics research.
+Explore our research and outreach projects.
 
 <div class="projects-grid">
 {% assign display_projects = site.projects | where_exp: "item", "item.display != false" %}

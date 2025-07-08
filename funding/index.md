@@ -7,7 +7,7 @@ title: Funding & Collaborators
 
 ## Our Funders
 
-The ICG Research Software Engineering team's work is supported by various funding bodies.
+Innovation at the ICG is supported by various funding bodies.
 
 <div class="logo-grid">
   {% for funder in site.data.funders %}

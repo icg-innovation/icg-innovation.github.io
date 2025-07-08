@@ -48,31 +48,14 @@ title: About Us
 
 ## What We Do
 
-- **Software Development**: Creating robust, scalable software solutions for research projects
-- **Data Analysis Tools**: Building tools for processing and analyzing large astronomical datasets
-- **High-Performance Computing**: Optimizing code for HPC environments and parallel computing
-- **Machine Learning**: Implementing ML techniques for astronomical data analysis
-- **Visualization**: Developing tools to visualize complex cosmological data
-- **Training & Support**: Providing software training and support to researchers
-
-## Our Expertise
-
-- Scientific Python (NumPy, SciPy, Astropy)
-- High-performance languages (C++, Fortran, Julia)
-- Parallel computing (MPI, OpenMP, CUDA)
-- Machine learning frameworks
-- Web technologies for data visualization
-- Version control and collaborative development
-- Software testing and continuous integration
-
-## Join Our Team
-
-We're always looking for talented software engineers and researchers who are passionate about applying their skills to advance our understanding of the universe. Check back for open positions or contact us to express your interest.
+- **Research Software Engineers**:
+- **Innovation Projects**:
+- **Public Engagement and Outreach**:
 
 ## Contact Us
 
 For collaborations, questions, or more information about our work:
 
-Email: [icg-rse-group@port.ac.uk](mailto:icg-rse-group@port.ac.uk)
+RSEs Email: [icg-rse-group@port.ac.uk](mailto:icg-rse-group@port.ac.uk)
 
-GitHub: [github.com/icg-rse](https://github.com/icg-rse)
+Innovation GitHub: [github.com/icg-innovation](https://github.com/icg-innovation)
