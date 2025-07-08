@@ -5,7 +5,7 @@ title: Blog
 
 # Blog
 
-Stay updated with the latest news, tutorials, and insights from the ICG Research Software Engineering team.
+Stay updated with the latest news, tutorials, and insights from ICG Innovation.
 
 <div class="blog-list">
 {% for post in site.posts %}

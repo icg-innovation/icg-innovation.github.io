@@ -1,10 +1,10 @@
-title: Research Software Engineering @ ICG
-description: The Research Software Engineering team at the Institute of Cosmology and Gravitation
+title: Innovation @ ICG
+description: Innovation at the Institute of Cosmology and Gravitation
 show_downloads: false
 google_analytics: # Add your Google Analytics tracking ID here
 theme: jekyll-theme-cayman
-author: ICG RSE Team
-tagline: Building research software solutions for cosmology and astrophysics
+author: ICG Innovation
+tagline: Cutting edge research, innovation and outreach in astrophysics and cosmology.
 
 # Standard Jekyll settings
 markdown: kramdown
