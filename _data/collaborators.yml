@@ -19,3 +19,20 @@
   name: "University of Surrey"
   url: "https://www.surrey.ac.uk/"
   logo: "/assets/images/logos/uni_of_surrey_logo.png"
+- id: uni_glasgow
+  name: "University of Glasgow"
+  url: "https://www.gla.ac.uk/"
+  logo: "/assets/images/logos/uni_of_glasgow_logo.png"
+- id: uni_birmingham
+  name: "University of Birmingham"
+  url: "https://www.birmingham.ac.uk/"
+  logo: "/assets/images/logos/uni_of_birmingham_logo.png"
+- id: uni_cardiff
+  name: "Cardiff University"
+  url: "https://www.cardiff.ac.uk/"
+  logo: "/assets/images/logos/cardiff_uni_logo.png"
+- id: uni_cambridge
+  name: "University of Cambridge"
+  url: "https://www.cam.ac.uk/"
+  logo: "/assets/images/logos/uni_of_cambridge_logo.png"
+
