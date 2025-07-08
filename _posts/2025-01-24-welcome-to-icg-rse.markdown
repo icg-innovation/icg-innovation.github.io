@@ -10,7 +10,7 @@ We're excited to launch the new website for Innovation at the Institute of Cosmo
 
 ## Who We Are - Research Software Engineers
 
-We are a dedicated team of software engineers, researchers working at the intersection of software development and cosmological research. Our mission is to create robust, efficient, and innovative software solutions that enable groundbreaking discoveries in cosmology and astrophysics.
+We are a dedicated team of software engineers and researchers working at the intersection of software development and cosmological research. Our mission is to create robust, efficient, and innovative software solutions that enable groundbreaking discoveries in cosmology and astrophysics.
 
 ## What We Do
 
