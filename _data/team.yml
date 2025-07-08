@@ -19,8 +19,8 @@ members:
     pure_url: "https://researchportal.port.ac.uk/en/persons/gareth-cabourn-davies"
     orcid: "0000-0002-4289-3439"
     research_interests: [Gravitational Waves]
-    bio: It's your boy
-    image: "https://researchportal.port.ac.uk/files-asset/26555480/profilepic.jpg"
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/106085434/BalconyProfile.JPG"
 
   - name: "Maxime Deckers"
     slug: "maxime-deckers"
