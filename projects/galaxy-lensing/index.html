@@ -13,11 +13,11 @@
 <meta property="og:description" content="Overview" />
 <meta property="og:site_name" content="Innovation @ ICG" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-09-30T17:06:34+00:00" />
+<meta property="article:published_time" content="2025-09-30T18:01:25+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Galaxy Lensing" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Coleman Krawczyk"},"dateModified":"2025-09-30T17:06:34+00:00","datePublished":"2025-09-30T17:06:34+00:00","description":"Overview","headline":"Galaxy Lensing","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/galaxy-lensing/"},"url":"/projects/galaxy-lensing/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Coleman Krawczyk"},"dateModified":"2025-09-30T18:01:25+00:00","datePublished":"2025-09-30T18:01:25+00:00","description":"Overview","headline":"Galaxy Lensing","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/galaxy-lensing/"},"url":"/projects/galaxy-lensing/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -78,6 +78,40 @@
   <div class="project-content">
     <h2 id="overview">Overview</h2>
 
+<p>This project focuses on gravitational lensing analysis of galaxies and their surrounding environment.</p>
+
+<!-- Example carousel - just change the div id and image array -->
+<div id="galaxy-lensing-carousel"></div>
+
+<script src="/assets/js/carousel.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const galaxyImages = [
+    { 
+      src: '/assets/images/projects/galaxy_lensing/simulation1.jpg', 
+      alt: 'Galaxy lensing simulation 1' 
+    },
+    { 
+      src: '/assets/images/projects/galaxy_lensing/simulation2.jpg', 
+      alt: 'Galaxy lensing simulation 2' 
+    },
+    { 
+      src: '/assets/images/projects/galaxy_lensing/results.jpg', 
+      alt: 'Analysis results' 
+    }
+  ];
+  
+  new ImageCarousel('galaxy-lensing-carousel', galaxyImages, {
+    width: '600px',
+    height: '400px',
+    caption: 'Galaxy lensing analysis visualizations',
+    autoPlay: true,
+    autoPlayInterval: 4000
+  });
+});
+</script>
+
 <h2 id="key-features">Key Features</h2>
 
 <h2 id="technology-stack">Technology Stack</h2>
@@ -122,7 +156,7 @@
 
     <footer class="site-footer">
       <p>&copy; 2025 ICG Innovation. All rights reserved.</p>
-      <p>Last updated: 30 Sep 2025, 17:06</p>
+      <p>Last updated: 30 Sep 2025, 18:01</p>
     </footer>
   </body>
 </html>
