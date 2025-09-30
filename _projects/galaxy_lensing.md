@@ -3,6 +3,7 @@ layout: project
 title: Galaxy Lensing
 display: false
 featured: false
+featured_order:
 summary:
 github:
 paper:
@@ -10,7 +11,7 @@ funding:
 image:
 grant:
 tags: []
-authors: []
+authors: ["Coleman Krawczyk"]
 funders: []
 collaborators: []
 ---

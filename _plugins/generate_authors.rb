@@ -27,11 +27,29 @@ module Jekyll
       safe true
 
       def generate(site)
+        # Try the flat members list first (for backward compatibility)
         team_data = site.data.dig('team', 'members')
+        
+        # If no flat list, generate from teams structure
         if team_data.nil? || !team_data.is_a?(Array) || team_data.empty?
+          team_data = []
+          teams_data = site.data.dig('team', 'teams')
+          
+          if teams_data && teams_data.is_a?(Hash)
+            teams_data.each do |team_name, team_info|
+              if team_info && team_info['members'] && team_info['members'].is_a?(Array)
+                team_data.concat(team_info['members'])
+              end
+            end
+          end
+        end
+        
+        if team_data.empty?
           Jekyll.logger.warn "Author Generator:", "No team members found in _data/team.yml"
           return
         end
+
+        Jekyll.logger.info "Author Generator:", "Found #{team_data.length} team members"
 
         team_data.each do |member|
           next unless member['slug'] && !member['slug'].empty?

@@ -3,6 +3,7 @@ layout: project
 title: Identifying Wrist Fractures
 display: false
 featured: false
+featured_order:
 summary:
 github:
 paper:

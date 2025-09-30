@@ -35,4 +35,16 @@
   name: "University of Cambridge"
   url: "https://www.cam.ac.uk/"
   logo: "/assets/images/logos/uni_of_cambridge_logo.png"
+- id: imperial
+  name: "Imperial College London"
+  url: "https://www.imperial.ac.uk/"
+  logo: "/assets/images/logos/imperial_college_logo.png"
+- id: lancaster
+  name: "Lancaster University"
+  url: "https://www.lancaster.ac.uk/"
+  logo: "/assets/images/logos/lancaster_uni_logo.png"
+- id: warwick
+  name: "University of Warwick"
+  url: "https://warwick.ac.uk/"
+  logo: "/assets/images/logos/uni_of_warwick_logo.png"
 

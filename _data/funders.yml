@@ -31,3 +31,8 @@
   name: "Engineering and Physical Sciences Research Council"
   url: "https://www.ukri.org/councils/epsrc/"
   logo: "/assets/images/logos/epsrc_logo.png"
+- id: TFI
+  name: "The Faraday Institution"
+  url: "https://www.faraday.ac.uk/"
+  logo: "/assets/images/logos/faraday_institution_logo.jpg"
+  featured: true

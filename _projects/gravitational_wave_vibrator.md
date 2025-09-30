@@ -1,8 +1,9 @@
 ---
 layout: project
 title: G.A.R.E.T.H - Gravitational Analysis & Reponse Engineering with Tactile Haptics
-display: true
+display: false
 featured: false
+featured_order:
 summary:
 github:
 paper:

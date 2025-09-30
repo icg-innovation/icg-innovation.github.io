@@ -9,7 +9,7 @@ github: https://github.com/icg-rse/new-simulation-tool
 paper: https://road_paper.com
 funding: Supported by Arthur Tolley
 grant: https://grant.com
-image: /assets/images/projects/road_detection/detection.png
+image: /assets/images/projects/road_detection/eodt4crises_logo.jpg
 tags: [python, machine learning, computer vision]
 authors: ["Arthur Tolley"]
 funders: [esa]

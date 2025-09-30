@@ -3,6 +3,7 @@ layout: project
 title: Euclid
 display: false
 featured: false
+featured_order:
 summary:
 github:
 paper:

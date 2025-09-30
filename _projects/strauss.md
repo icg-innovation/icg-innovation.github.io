@@ -3,6 +3,7 @@ layout: project
 title: STRAUSS
 display: false
 featured: false
+featured_order:
 summary:
 github:
 paper:

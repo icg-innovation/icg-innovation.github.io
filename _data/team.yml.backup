@@ -26,6 +26,15 @@ teams:
         bio:
         image: "https://researchportal.port.ac.uk/files-asset/106085434/BalconyProfile.JPG"
 
+      - name: "Maxime Deckers"
+        slug: "maxime-deckers"
+        role: "Research Software Engineer"
+        email: "Maxime.Deckers@port.ac.uk"
+        pure_url: "https://researchportal.port.ac.uk/en/persons/maxime-deckers"
+        research_interests:
+        bio:
+        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+
       - name: "Ricardo Giorgetti Landim"
         slug: "ricardo-giorgetti-landim"
         role: "Research Software Engineer"
@@ -45,6 +54,15 @@ teams:
         research_interests:
         bio:
         image: "https://researchportal.port.ac.uk/files-asset/26284802/14692875.jpg"
+
+      - name: "Lorenza Nanni"
+        slug: "lorenza-nanni"
+        role: "Research Software Engineer"
+        email: "Lorenza.Nanni@port.ac.uk"
+        pure_url: "https://researchportal.port.ac.uk/en/persons/lorenza-nanni-2"
+        research_interests: [Earth Observation, Machine Learning]
+        bio:
+        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
       - name: "Arthur Tolley"
         slug: "arthur-tolley"
@@ -96,65 +114,19 @@ teams:
         bio:
         image: "https://researchportal.port.ac.uk/files-asset/88806483/profileMarch24.png"
 
-  space:
-    name: "Space"
-    description: "Our space team specializes in satellite technology, space missions, and the application of space-based data for scientific research, contributing to advancements in space exploration and Earth observation."
-    members:
-      - name: "Becky Canning"
-        slug: "becky-canning"
-        role: "Deputy Director - Space"
-        email: "Becky.Canning@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/becky-canning"
-        orcid: "0000-0003-1398-5542"
-        research_interests: []
-        bio:
-        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
-      - name: "Gbenga Olumodimu"
-        slug: "gbenga-olumodimu"
-        role: ""
-        email: "Gbenga.Olumodimu@port.ac.uk"
-        research_interests: []
-        bio:
-        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
-      - name: "Richard Robinson"
-        slug: "richard-robinson"
-        role: "Senior Research Fellow"
-        email: "Richard.Robinson@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/richard-robinson"
-        research_interests: []
-        bio:
-        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
-
   outreach:
     name: "Outreach"
     description: "Our outreach team focuses on science communication, public engagement, and making astronomical research accessible to diverse audiences through innovative educational programs and interactive experiences."
     members:
       - name: "Jen Gupta"
         slug: "jen-gupta"
-        role: "Professor of Astronomy Public Engagement"
+        role: "Outreach Coordinator"
         email: "Jen.Gupta@port.ac.uk"
         pure_url: "https://researchportal.port.ac.uk/en/persons/jen-gupta"
-        orcid: "0000-0001-9799-4459"
+        orcid: "0000-0002-4841-4281"
         research_interests: [Science Communication, Public Engagement, Astronomy Education]
         bio:
         image: "https://researchportal.port.ac.uk/files-asset/24714145/test_72kb.jpg"
-      - name: "Nicolas Bonne"
-        slug: "nicolas-bonne"
-        role: "Public Engagement and Outreach Fellow"
-        email: "Nicolas.Bonne@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/nicolas-bonne"
-        orcid: "0000-0001-9569-8808"
-        research_interests: [Science Communication, Public Engagement, Astronomy Education]
-        bio:
-        image: "https://researchportal.port.ac.uk/files-asset/16361681/Nicolas_Bonne_770x550.jpg?w=320&f=webp"
-      - name: "Sam Weston"
-        slug: "sam-weston"
-        role: "Outreach and Public Engagement Fellow"
-        email: "Sam.Weston@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/sam-weston"
-        research_interests: [Science Communication, Public Engagement, Astronomy Education]
-        bio:
-        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
   computing:
     name: "ICG Computing"
@@ -169,31 +141,107 @@ teams:
         bio:
         image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
 
-  previous:
-    name: "Previous Members"
-    description: "Former team members who have contributed to our projects."
-    members:
-      - name: "Lorenza Nanni"
-        slug: "lorenza-nanni"
-        role: "Former Research Software Engineer"
-        email: "Lorenza.Nanni@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/lorenza-nanni-2"
-        research_interests: [Earth Observation, Machine Learning]
-        bio:
-        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
-
-      - name: "Maxime Deckers"
-        slug: "maxime-deckers"
-        role: "Former Research Software Engineer"
-        email: "Maxime.Deckers@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/maxime-deckers"
-        research_interests:
-        bio:
-        image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
-
-
 # Note: The flat 'members' list is now automatically generated from the teams structure
-# by the generate_members_list.rb plugin.
+# by the generate_members_list.rb plugin. This eliminates duplication while maintaining
+# backward compatibility with existing templates.
 
 # Add more team members here by adding them to the appropriate team above
+# Can be populated from Pure API using their person IDs
+    slug: "maxime-deckers"
+    role: "Research Software Engineer"
+    email: "Maxime.Deckers@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/maxime-deckers"
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+  - name: "Ricardo Giorgetti Landim"
+    slug: "ricardo-giorgetti-landim"
+    role: "Research Software Engineer"
+    email: "Ricardo.Landim@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/ricardo-giorgetti-landim"
+    orcid: "0000-0001-6801-3519"
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+  - name: "Coleman Krawczyk"
+    slug: "coleman-krawczyk"
+    role: "Senior Research Software Engineer"
+    email: "Coleman.Krawczyk@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/coleman-krawczyk"
+    orcid: "0000-0001-9233-2341"
+    research_interests:
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/26284802/14692875.jpg"
+  - name: "Toby Maule"
+    slug: "toby-maule"
+    role: "Senior Specialist Technician"
+    email: "Toby.Maule@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/toby-maule"
+    research_interests: [High Performance Computing]
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+  - name: "Xan Morice-Atkinson"
+    slug: "xan-morice-atkinson"
+    role: "Research Software Engineer"
+    email: "Xan.Morice-Atkinson@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/xan-guilian-morice-atkinson"
+    orcid: "0000-0001-6540-5517"
+    research_interests: [High Performance Computing, Machine Learning, Cosmological Simulations]
+    bio: Xan, Xan, Xan, Xan, Xan, Xan, Xan, Xan
+    image: "https://researchportal.port.ac.uk/files-asset/81823383/XMA_smaller.png"
+  - name: "Lorenza Nanni"
+    slug: "lorenza-nanni"
+    role: "Research Software Engineer"
+    email: "Lorenza.Nanni@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/lorenza-nanni-2"
+    research_interests: [Earth Observation, Machine Learning]
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+  - name: "Christopher Pattison"
+    slug: "christopher-pattison"
+    role: "Research Software Engineer"
+    email: "Christopher.Pattison@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/christopher-pattison"
+    orcid: "0000-0003-3272-2617"
+    research_interests: [Public Outreach, Cosmology]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/51120090/twitter_pic_blue_cropped_1_.jpg"
+  - name: "Arthur Tolley"
+    slug: "arthur-tolley"
+    role: "Research Software Engineer"
+    email: "Arthur.Tolley@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/arthur-tolley-2"
+    orcid: "0000-0001-9841-943X"
+    research_interests: [Data Science, Software Engineering, Machine Learning]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"
+  - name: "Obinna Umeh"
+    slug: "obinna-umeh"
+    role: "Research Software Engineer"
+    email: "Obinna.Umeh@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/obinna-umeh-2"
+    orcid: "0000-0003-3398-9591"
+    research_interests: [Machine Learning]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/80978711/Linkedin.jpg"
+  - name: "Sam Youles"
+    slug: "sam-youles"
+    role: "Research Software Engineer"
+    email: "Samantha.Youles@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/sam-youles"
+    orcid: "0000-0002-7520-5911"
+    research_interests: [Cosmology, Sonification]
+    bio:
+    image: "https://researchportal.port.ac.uk/files-asset/88806483/profileMarch24.png"
+  - name: "Jen Gupta"
+    slug: "jen-gupta"
+    role: "Professor of Astronomy Public Engagement"
+    email: "Jen.Gupta@port.ac.uk"
+    pure_url: "https://researchportal.port.ac.uk/en/persons/jen-gupta"
+    orcid: "0000-0001-9799-4459"
+    research_interests: [Science Communication, Public Engagement, Astronomy Education]
+    bio:
+    image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+
+# Add more team members here
 # Can be populated from Pure API using their person IDs

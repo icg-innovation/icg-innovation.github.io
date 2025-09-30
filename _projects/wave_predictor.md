@@ -1,15 +1,15 @@
 ---
 layout: project
 title: Real-time semantic wave imaging analyser for seakeeping
-display: true
-featured: true
-featured_order: 3
+display: false
+featured: false
+featured_order:
 summary: Intelligent Ocean Wave Imaging for Enhanced Seakeeping and Maritime Safety
 image: /assets/images/projects/wave_sim/boat_waves.png
 tags: [Computer Vision, Maritime, Machine Learning, Blender]
 funding: "Supported by the Engineering and Physical Sciences Research Council"
 grant: https://gtr.ukri.org/projects?ref=EP%2FX035778%2F1
-authors: ["Xan Morice-Atkinson"]
+authors: ["Xan Morice-Atkinson", "Obinna Umeh"]
 funders: [epsrc]
 collaborators: []
 ---
