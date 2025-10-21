@@ -5,10 +5,10 @@ display: false
 featured: false
 featured_order:
 summary: "A conversational AI dashboard for exploring historical and statistical data through natural language interaction"
-github: "https://github.com/icg-rse/vobchat"
-paper: "https://www.test_vobchat_paper.com"
+github:
+paper:
 funding: "Supported by the Economic and Social Research Council"
-image: /assets/images/projects/test3_preview.jpg
+image:
 grant: https://gtr.ukri.org/projects?ref=ES%2FZ502923%2F1#/tabOverview
 tags: [python, ai, dash, postgresql, langchain, geospatial]
 authors: ["Xan Morice-Atkinson"]
