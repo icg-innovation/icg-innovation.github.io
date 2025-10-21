@@ -3,7 +3,7 @@ layout: project
 title: Kubernetes Teaching Cluster
 display: true
 featured: true
-featured_order: 3
+featured_order: 2
 summary: The University of Portsmouth's first Kubernetes cluster to enable the teaching of a Data Science and Artificial Intelligence Continuing Professional Development course.
 github: https://github.com/icg-rse/space-k8s-gitops
 paper:

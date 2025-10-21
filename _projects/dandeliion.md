@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Danedeliion
-display: true
+display: false
 featured: false
 featured_order:
 summary:

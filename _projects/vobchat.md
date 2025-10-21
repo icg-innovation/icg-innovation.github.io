@@ -1,9 +1,9 @@
 ---
 layout: project
 title: "VobChat"
-display: true
-featured: true
-featured_order: 1
+display: false
+featured: false
+featured_order:
 summary: "A conversational AI dashboard for exploring historical and statistical data through natural language interaction"
 github: "https://github.com/icg-rse/vobchat"
 paper: "https://www.test_vobchat_paper.com"
