@@ -108,3 +108,13 @@ This project represents a successful collaboration between academic research and
 - **European Space Agency (ESA)**: Funding and supporting the development of this Earth observation tool
 
 The partnership leverages ESA's commitment to developing practical applications of satellite Earth observation data, combining cutting-edge AI research with real-world deployment challenges to create a tool that can make a meaningful impact in crisis response and infrastructure monitoring.
+
+## Live Demonstration
+
+<iframe
+  src="https://icg-innovation.github.io/EODT4Crises"
+  width="100%"
+  height="800px"
+  style="border:none;"
+  title="EODT4Crises Project Page">
+</iframe>
