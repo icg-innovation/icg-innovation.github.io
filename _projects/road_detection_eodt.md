@@ -7,7 +7,7 @@ featured_order: 1
 summary: Interactive web application for detecting roads from satellite imagery using computer vision with satellite data integration.
 github: https://github.com/icg-innovation/EODT4Crises
 paper:
-funding: Supported by ESA
+funding: [Supported by ESA][https://business.esa.int/projects/eodt4crises]
 grant:
 image: /assets/images/projects/road_detection/eodt4crises_logo.jpg
 tags: [python, javascript, machine learning, computer vision, web application]
@@ -108,13 +108,3 @@ This project represents a successful collaboration between academic research and
 - **European Space Agency (ESA)**: Funding and supporting the development of this Earth observation tool
 
 The partnership leverages ESA's commitment to developing practical applications of satellite Earth observation data, combining cutting-edge AI research with real-world deployment challenges to create a tool that can make a meaningful impact in crisis response and infrastructure monitoring.
-
-## Live Demonstration
-
-<iframe
-  src="https://icg-innovation.github.io/EODT4Crises"
-  width="100%"
-  height="800px"
-  style="border:none;"
-  title="EODT4Crises Project Page">
-</iframe>
