@@ -43,10 +43,18 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <a href="/"><img src="/assets/images/logos/uop_logo_white.png" alt="University of Portsmouth Logo" class="header-logo"></a>
+      <a href="/" class="header-logo-link" aria-label="Innovation @ ICG home">
+        <img src="/assets/images/logos/uop_logo_white.png" alt="University of Portsmouth Logo" class="header-logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
       <h1 class="project-name">Jen Gupta</h1>
       <!-- <h2 class="project-tagline">Innovation at the Institute of Cosmology and Gravitation</h2> -->
-      <nav class="main-nav">
+      
+      <nav id="site-navigation" class="main-nav" aria-label="Main navigation">
         <a href="/" class="btn">Home</a>
         <a href="/blog/" class="btn">Blog</a>
         <a href="/projects/" class="btn">Projects</a>
@@ -113,7 +121,8 @@
 
     <footer class="site-footer">
       <p>&copy; 2026 ICG Innovation. All rights reserved.</p>
-      <p>Last updated: 19 May 2026, 14:37</p>
+      <p>Last updated: 20 May 2026, 11:49</p>
     </footer>
+    <script defer src="/assets/js/nav-menu.js"></script>
   </body>
 </html>

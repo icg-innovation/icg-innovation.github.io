@@ -4,8 +4,9 @@
  */
 class ImageCarousel {
   constructor(containerId, images, options = {}) {
+    this.containerId = containerId;
     this.container = document.getElementById(containerId);
-    this.images = images;
+    this.images = Array.isArray(images) ? images : [];
     this.options = {
       width: options.width || '800px',
       height: options.height || '800px',
@@ -24,6 +25,11 @@ class ImageCarousel {
   init() {
     if (!this.container) {
       console.error(`Carousel container with id "${this.containerId}" not found`);
+      return;
+    }
+
+    if (this.images.length === 0) {
+      console.warn(`Carousel "${this.containerId}" has no images`);
       return;
     }
 
@@ -80,7 +86,7 @@ class ImageCarousel {
     const dots = this.container.querySelectorAll('.dot');
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
-        const slideIndex = parseInt(dot.dataset.slide);
+        const slideIndex = parseInt(dot.dataset.slide, 10);
         this.goToSlide(slideIndex);
       });
     });

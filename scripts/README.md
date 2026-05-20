@@ -16,23 +16,22 @@ pip install requests pyyaml
    - Organization/department IDs for filtering
    - OAI-PMH endpoint information
 
-2. **Update the script**: Edit `fetch_pure_profiles.py`:
-   ```python
-   PURE_API_KEY = "your-api-key-here"
-   ICG_ORG_ID = "your-organization-id"
+2. **Set environment variables**:
+   ```bash
+   export PURE_API_KEY="your-api-key-here"
+   export PURE_ORG_ID="/en/organisations/your-organization-id"
    ```
 
 ## Usage
 
 ### Method 1: Automated (with API access)
 ```bash
-cd scripts
-python fetch_pure_profiles.py
+python3 scripts/fetch_pure_profiles.py
 ```
 
 This will:
 - Fetch team member profiles from Pure
-- Update `_data/team.yml` automatically
+- Update `_data/team.yml` automatically. If the file uses the `teams` structure, fetched members are written to the `rse` team by default. Set `PURE_TEAM_KEY` to target another team.
 - Rebuild the site with current data
 
 ### Method 2: Manual

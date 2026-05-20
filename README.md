@@ -86,7 +86,7 @@ Write the post content here.
 Before opening a pull request, run:
 
 ```sh
-bundle exec jekyll build
+script/cibuild
 ```
 
 If you changed project pages, also check `/projects/` locally to confirm the project card and detail page render as expected.
