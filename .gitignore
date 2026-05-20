@@ -25,9 +25,6 @@ Thumbs.db
 *.swo
 *~
 
-# Ruby
-Gemfile.lock
-
 # Logs
 *.log
 

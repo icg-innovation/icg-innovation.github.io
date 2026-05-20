@@ -8,7 +8,7 @@ layout: default
       <h1 class="project-title">{{ page.title }}</h1>
       <p class="project-summary">{{ page.summary }}</p>
     </div>
-    {% if page.github or page.paper or page.docs %}
+    {% if page.github or page.paper or page.docs or page.article %}
       <div class="project-links">
         {% if page.github %}
           <a href="{{ page.github }}" class="btn btn--outline">View on GitHub</a>
@@ -65,9 +65,11 @@ layout: default
               {% endif %}
               <h3>{{ author_profile.name }}</h3>
               <p class="team-role">{{ author_profile.role }}</p>
-              <div class="team-links">
-                <a href="/author/{{ author_profile.slug}}/">Profile</a>
-              </div>
+              {% if author_profile.slug %}
+                <div class="team-links">
+                  <a href="{{ '/author/' | append: author_profile.slug | append: '/' | relative_url }}">Profile</a>
+                </div>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}

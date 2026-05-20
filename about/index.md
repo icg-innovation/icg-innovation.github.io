@@ -49,10 +49,10 @@ title: About Us
               <a href="mailto:{{ member.email }}">Email</a>
             {% endif %}
             {% if member.pure_url and member.pure_url != "" %}
-              <a href="{{ member.pure_url }}" target="_blank">Pure Profile</a>
+              <a href="{{ member.pure_url }}" target="_blank" rel="noopener noreferrer">Pure Profile</a>
             {% endif %}
             {% if member.orcid and member.orcid != "" %}
-              <a href="https://orcid.org/{{ member.orcid }}" target="_blank">ORCID</a>
+              <a href="https://orcid.org/{{ member.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>
             {% endif %}
           </div>
           <a href="/author/{{ slug }}/" class="team-member-link--stretched" aria-label="View profile for {{ member.name }}"></a>

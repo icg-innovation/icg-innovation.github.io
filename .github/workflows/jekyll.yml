@@ -16,14 +16,11 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3  # Match your Ruby version
+          ruby-version: 3.4.4
           bundler-cache: true
 
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Build and verify site
+        run: script/cibuild
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

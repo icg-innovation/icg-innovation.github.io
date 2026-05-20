@@ -3,7 +3,12 @@
 set -e
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri --url-ignore '/fonts.gstatic.com/'
-bundle exec rubocop -D --config .rubocop.yml
-bundle exec script/validate-html
-gem build jekyll-theme-cayman.gemspec
+bundle exec htmlproofer ./_site --check-html --disable-external
+ruby -c _plugins/generate_authors.rb
+ruby -c _plugins/generate_members_list.rb
+python3 - <<'PY'
+from pathlib import Path
+
+source = Path("scripts/fetch_pure_profiles.py")
+compile(source.read_text(encoding="utf-8"), str(source), "exec")
+PY
