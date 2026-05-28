@@ -46,16 +46,6 @@ teams:
         bio:
         image: "https://researchportal.port.ac.uk/files-asset/26284802/14692875.jpg"
 
-      - name: "Arthur Tolley"
-        slug: "arthur-tolley"
-        role: "Research Software Engineer"
-        email: "Arthur.Tolley@port.ac.uk"
-        pure_url: "https://researchportal.port.ac.uk/en/persons/arthur-tolley-2"
-        orcid: "0000-0001-9841-943X"
-        research_interests: [Data Science, Software Engineering, Machine Learning]
-        bio:
-        image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"
-
       - name: "Obinna Umeh"
         slug: "obinna-umeh"
         role: "Research Software Engineer"
@@ -190,6 +180,16 @@ teams:
         research_interests:
         bio:
         image: "https://researchportal.port.ac.uk/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png"
+
+      - name: "Arthur Tolley"
+        slug: "arthur-tolley"
+        role: "Former Research Software Engineer"
+        email: "Arthur.Tolley@port.ac.uk"
+        pure_url: "https://researchportal.port.ac.uk/en/persons/arthur-tolley-2"
+        orcid: "0000-0001-9841-943X"
+        research_interests: [Data Science, Software Engineering, Machine Learning]
+        bio:
+        image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"
 
 
 # Note: The flat 'members' list is now automatically generated from the teams structure
