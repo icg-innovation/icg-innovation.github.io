@@ -8,7 +8,7 @@ summary: RSE support for an EPSRC maritime safety project using stereo imaging, 
 github: https://github.com/xangma/stereoocean
 paper:
 funding: Supported by EPSRC project EP/X035778/1
-image: /assets/images/projects/stereowave/example-render.png
+image: /assets/images/projects/enhancing-maritime-safety/example-render.png
 grant: https://gtr.ukri.org/projects?ref=EP%2FX035778%2F1
 article:
 docs: https://stereoocean.github.io/
@@ -30,7 +30,7 @@ Public outputs are being prepared as separate manuscripts.
 
 Enhancements and optimisations made to [Blender](https://github.com/xangma/blender/tree/ocean-lod-v5.1.1), including the development of level of detail (LOD) functionality for the Ocean Modifier. The creation of a custom [stereoocean data pipeline](https://github.com/xangma/stereoocean) for creating stereo images of the ocean surface from Blender simulations, which are then used for training and validating computer vision models.
 
-![Example stereoocean render](/assets/images/projects/stereowave/example-render.png)
+![Example stereoocean render](/assets/images/projects/enhancing-maritime-safety/example-render.png)
 
 *Example stereoocean render.*
 
