@@ -40,6 +40,7 @@ Create a new file: `_projects/my-project-name.md`
 layout: project
 title: My Project Name
 display: true
+completed: false
 featured: false
 featured_order:
 summary: A brief one-sentence description of what your project does
@@ -100,6 +101,7 @@ The YAML front matter contains metadata about your project. Here's a detailed ex
 | Parameter | Type | Description | Example |
 |-----------|------|-------------|---------|
 | `display` | boolean | Set to `true` to show on website, `false` to hide | `true` |
+| `completed` | boolean | Set to `true` to list the project under Completed Projects | `false` |
 | `featured` | boolean | Set to `true` to feature on homepage | `true` |
 | `featured_order` | integer | Order of featured projects (lower = higher priority) (max 4?) | `1` |
 

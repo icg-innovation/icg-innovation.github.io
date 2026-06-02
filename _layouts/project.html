@@ -6,6 +6,9 @@ layout: default
   <header class="project-header">
     <div class="project-header-main">
       <h1 class="project-title">{{ page.title }}</h1>
+      {% if page.completed == true %}
+        <p class="project-status"><span class="project-status-badge">Completed Project</span></p>
+      {% endif %}
       <p class="project-summary">{{ page.summary }}</p>
     </div>
     {% if page.github or page.paper or page.docs or page.article %}

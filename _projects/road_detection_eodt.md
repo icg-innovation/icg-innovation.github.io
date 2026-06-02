@@ -2,6 +2,7 @@
 layout: project
 title: EODT4Crises - Road Detection from Satellite Imagery
 display: true
+completed: true
 featured: true
 featured_order: 1
 summary: Interactive web application for detecting roads from satellite imagery using computer vision with satellite data integration.
