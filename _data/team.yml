@@ -191,6 +191,7 @@ teams:
         bio:
         image: "https://researchportal.port.ac.uk/files-asset/104676580/Me_Scaled.JPG"
 
+
 # Note: The flat 'members' list is now automatically generated from the teams structure
 # by the generate_members_list.rb plugin.
 
