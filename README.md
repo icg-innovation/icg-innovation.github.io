@@ -47,6 +47,7 @@ For a new project, create a file such as `_projects/my-project.md`:
 layout: project
 title: "My Project"
 display: true
+completed: false
 featured: false
 summary: "One sentence describing the project."
 github: https://github.com/icg-innovation/my-project
