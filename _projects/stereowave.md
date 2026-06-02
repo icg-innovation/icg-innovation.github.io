@@ -1,6 +1,6 @@
 ---
 layout: project
-title: StereoWave
+title: Enhancing Maritime Safety
 display: true
 featured: true
 featured_order: 3
@@ -20,9 +20,9 @@ collaborators: [uop]
 
 ## Overview
 
-StereoWave contributes to the EPSRC-funded [Enhancing Maritime Safety](https://stereoocean.github.io/) project at the University of Portsmouth. The project focuses on stereo imaging, 4D wave reconstruction, computer vision, and experimental validation to support safer seakeeping decisions for maritime operations.
+The EPSRC-funded [Enhancing Maritime Safety](https://stereoocean.github.io/) project at the University of Portsmouth focuses on stereo imaging, 4D wave reconstruction, computer vision, and experimental validation to support safer seakeeping decisions for maritime operations.
 
-The wider project is developing accessible real-time semantic wave imaging methods for seakeeping. Public outputs are being prepared as separate manuscripts.
+Public outputs are being prepared as separate manuscripts.
 
 ## RSE Contribution
 
@@ -40,7 +40,16 @@ Development of a computer vision model for disparity map prediction from stereo 
 
 ## Links
 
-- [stereoocean project site](https://stereoocean.github.io/)
+### Information
+
+- [Enhancing Maritime Safety project site](https://stereoocean.github.io/)
+- [EPSRC project EP/X035778/1](https://gtr.ukri.org/projects?ref=EP%2FX035778%2F1)
+
+### Software
+
 - [Blender ocean LOD changes](https://github.com/xangma/blender/tree/ocean-lod-v5.1.1)
 - [stereoocean data pipeline](https://github.com/xangma/stereoocean)
-- [EPSRC project EP/X035778/1](https://gtr.ukri.org/projects?ref=EP%2FX035778%2F1)
+
+### Papers
+
+In preparation, to be added when available.
