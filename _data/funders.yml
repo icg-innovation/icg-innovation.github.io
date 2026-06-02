@@ -36,3 +36,7 @@
   url: "https://www.faraday.ac.uk/"
   logo: "/assets/images/logos/faraday_institution_logo.jpg"
   featured: true
+- id: defra
+  name: "Department for Environment, Food and Rural Affairs"
+  url: "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+  logo: "/assets/images/logos/DEFRA-logo.png"
