@@ -6,7 +6,7 @@ featured: false
 summary: "This is an amibitious project that puts Tiny Machine Learning into space where it will run real-time inference on data from three other payloads to ensure that only useful data is transmitted back to earth."
 github: https://github.com/icg-innovation/my-project
 paper:
-image: /assets/images/projects/TIM/FlatSat.jpg
+image: /assets/images/logos/space_south_central_logo.png
 tags: [python, astronomy]
 authors: ["Andy Berry"]
 funders: []
