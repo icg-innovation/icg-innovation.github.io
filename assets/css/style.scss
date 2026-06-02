@@ -228,6 +228,22 @@
   margin-bottom: 1rem;
 }
 
+.project-status {
+  margin: 0 0 0.75rem;
+}
+
+.project-status-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #dff3e4;
+  color: #1f6f43;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 .project-links {
   display: flex;
   gap: 0.5rem;

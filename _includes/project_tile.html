@@ -1,7 +1,12 @@
 <div class="project-tile">
   <div class="project-tile-text">
     <div class="project-tile-header">
-      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <div>
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        {% if project.completed == true %}
+          <p class="project-status"><span class="project-status-badge">Completed</span></p>
+        {% endif %}
+      </div>
       <div class="project-links">
         {% if project.github %}
           <a href="{{ project.github }}" class="btn btn-sm btn--outline">GitHub</a>
