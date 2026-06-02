@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Innovation @ ICG | Cutting edge research, innovation and outreach in astrophysics and cosmology.</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Innovation @ ICG" />
+<meta name="author" content="ICG Innovation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Innovation at the Institute of Cosmology and Gravitation" />
+<meta property="og:description" content="Innovation at the Institute of Cosmology and Gravitation" />
+<meta property="og:site_name" content="Innovation @ ICG" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-06-02T10:08:34+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Innovation @ ICG" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ICG Innovation"},"dateModified":"2026-06-02T10:08:34+00:00","datePublished":"2026-06-02T10:08:34+00:00","description":"Innovation at the Institute of Cosmology and Gravitation","headline":"Innovation @ ICG","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/road-detection-eodt/"},"url":"/projects/road-detection-eodt/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <a href="/" class="header-logo-link" aria-label="Innovation @ ICG home">
+        <img src="/assets/images/logos/uop_logo_white.png" alt="University of Portsmouth Logo" class="header-logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <h1 class="project-name">Innovation @ ICG</h1>
+      <!-- <h2 class="project-tagline">Innovation at the Institute of Cosmology and Gravitation</h2> -->
+      
+      <nav id="site-navigation" class="main-nav" aria-label="Main navigation">
+        <a href="/" class="btn">Home</a>
+        <a href="/blog/" class="btn">Blog</a>
+        <a href="/projects/" class="btn is-active" aria-current="page">Projects</a>
+        <a href="/funding/" class="btn">Funding & Collaborators</a>
+        <a href="/about/" class="btn">About</a>
+        
+      </nav>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <article class="project">
+  <header class="project-header">
+    <div class="project-header-main">
+      <h1 class="project-title"></h1>
+      
+      <p class="project-summary"></p>
+    </div>
+    
+  </header>
+
+  <div class="project-meta">
+    
+    
+  </div>
+
+  <div class="project-content">
+    <h2 id="overview">Overview</h2>
+
+<p>EODT4Crises is a comprehensive web-based platform for automated road detection and mapping from satellite imagery. Built in partnership with Helyx and funded by ESA, this tool combines state-of-the-art machine learning with an intuitive web interface to enable rapid road network extraction from multiple satellite data sources. The platform features an interactive Leaflet.js-based frontend with a Python backend, supporting real-time analysis and visualization of road infrastructure for applications in crisis response, and infrastructure monitoring.</p>
+
+<div id="road-detection-carousel"></div>
+
+<script src="/assets/js/carousel.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const roadDetectionImages = [
+    { 
+      src: '/assets/images/projects/road_detection/example_1.png', 
+      alt: 'Road detection example showing satellite imagery and detected road network' 
+    },
+    { 
+      src: '/assets/images/projects/road_detection/example_2.png', 
+      alt: 'Road detection interface and visualization' 
+    },
+    { 
+      src: '/assets/images/projects/road_detection/example_3.png', 
+      alt: 'Satellite imagery analysis results' 
+    },
+    { 
+      src: '/assets/images/projects/road_detection/example_4.png', 
+      alt: 'Road network extraction example' 
+    },
+    { 
+      src: '/assets/images/projects/road_detection/example_5.png', 
+      alt: 'EODT4Crises application interface' 
+    }
+  ];
+  
+  new ImageCarousel('road-detection-carousel', roadDetectionImages, {
+    width: '800px',
+    height: '800px',
+    caption: 'Road detection application imagery and results',
+    autoPlay: false,
+    showDots: true,
+    showArrows: true
+  });
+});
+</script>
+
+<h2 id="key-features">Key Features</h2>
+
+<h3 id="interactive-web-interface">Interactive Web Interface</h3>
+<ul>
+  <li><strong>Leaflet.js-based Map</strong>: Interactive web mapping interface with smooth pan, zoom, and layer management</li>
+  <li><strong>Real-time Road Detection</strong>: On-demand road extraction using the SAM_road model directly in the browser</li>
+  <li><strong>OpenStreetMap Integration</strong>: Overlay and compare detected roads with existing OSM road networks</li>
+  <li><strong>Multi-layer Visualization</strong>: Toggle between different data layers and analysis results</li>
+</ul>
+
+<h3 id="multi-source-satellite-data-integration">Multi-Source Satellite Data Integration</h3>
+<ul>
+  <li><strong>Google Earth Engine (GEE)</strong>: Access to Landsat, Sentinel, and other satellite archives</li>
+  <li><strong>Maxar</strong>: Access to sub-meter resolution satellite data for detailed analysis</li>
+  <li><strong>Local File Upload</strong>: Support for user-provided satellite imagery and GeoTIFF files</li>
+</ul>
+
+<h3 id="advanced-road-detection">Advanced Road Detection</h3>
+<ul>
+  <li><strong>SAM_road Model</strong>: Leverages the Segment Anything Model adapted specifically for road detection</li>
+  <li><strong>Automated Vectorization</strong>: Converts detected road masks into clean vector geometries (GeoJSON, Shapefile)</li>
+</ul>
+
+<h2 id="technology-stack">Technology Stack</h2>
+
+<h3 id="frontend">Frontend</h3>
+<ul>
+  <li><strong>Leaflet.js</strong>: Interactive web mapping library for smooth map interactions</li>
+  <li><strong>HTML/CSS/JavaScript</strong>: Modern web technologies for responsive user interface</li>
+</ul>
+
+<h3 id="backend">Backend</h3>
+<ul>
+  <li><strong>Python</strong>: Core processing engine for machine learning and geospatial operations</li>
+  <li><strong>SAM_road</strong>: Specialized road detection model based on Segment Anything Model</li>
+  <li><strong>Flask/FastAPI</strong>: Web framework for API endpoints and data processing</li>
+</ul>
+
+<h2 id="applications--use-cases">Applications &amp; Use Cases</h2>
+
+<h3 id="crisis-response--emergency-management">Crisis Response &amp; Emergency Management</h3>
+<ul>
+  <li><strong>Rapid Assessment</strong>: Quickly assess road network damage after natural disasters</li>
+  <li><strong>Evacuation Planning</strong>: Identify accessible routes for emergency response</li>
+  <li><strong>Humanitarian Aid</strong>: Support logistics planning for aid delivery</li>
+</ul>
+
+<h2 id="project-partnership">Project Partnership</h2>
+
+<p>This project represents a successful collaboration between academic research and industry expertise:</p>
+
+<ul>
+  <li><strong>Helyx</strong>: Parallel development for mapping of power-network infrastructure.</li>
+  <li><strong>European Space Agency (ESA)</strong>: Funding and supporting the development of this Earth observation tool</li>
+</ul>
+
+<p>The partnership leverages ESA’s commitment to developing practical applications of satellite Earth observation data, combining cutting-edge AI research with real-world deployment challenges to create a tool that can make a meaningful impact in crisis response and infrastructure monitoring.</p>
+
+    
+
+  </div>
+
+  
+
+  <footer class="project-footer">
+    <a href="/projects/">← Back to all projects</a>
+  </footer>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 ICG Innovation. All rights reserved.</p>
+      <p>Last updated: 02 Jun 2026, 10:08</p>
+    </footer>
+    <script defer src="/assets/js/nav-menu.js"></script>
+  </body>
+</html>
