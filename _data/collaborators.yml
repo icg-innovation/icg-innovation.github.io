@@ -47,4 +47,19 @@
   name: "University of Warwick"
   url: "https://warwick.ac.uk/"
   logo: "/assets/images/logos/uni_of_warwick_logo.png"
-
+- id: oxford
+  name: "University of Oxford"
+  url: "https://www.ox.ac.uk/"
+  logo: "/assets/images/logos/oxford-logo.svg"
+- id: adler
+  name: "Adler Planetarium"
+  url: "https://www.adlerplanetarium.org/"
+  logo: "/assets/images/logos/adler-logo.png"
+- id: minnesota
+  name: "University of Minnesota"
+  url: "https://twin-cities.umn.edu/"
+  logo: "/assets/images/logos/minnesota-logo.png"
+- id: zooniverse
+  name: "Zooniverse"
+  url: "https://www.zooniverse.org/"
+  logo: "/assets/images/logos/zooniverse-logo.png"
