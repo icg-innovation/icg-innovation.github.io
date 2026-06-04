@@ -63,3 +63,7 @@
   name: "Zooniverse"
   url: "https://www.zooniverse.org/"
   logo: "/assets/images/logos/zooniverse-logo.png"
+  id: belfast
+  name: "Queen’s University Belfast"
+  url: "https://www.qub.ac.uk/"
+  logo: "/assets/images/logos/qub_logo.png"
