@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>UoP Covid Track and Trace | Innovation @ ICG</title>
+<title>Zooniverse Panoptes Aggregation | Innovation @ ICG</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="UoP Covid Track and Trace" />
+<meta property="og:title" content="Zooniverse Panoptes Aggregation" />
 <meta name="author" content="Coleman Krawczyk" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Overview" />
@@ -16,9 +16,9 @@
 <meta property="article:published_time" content="2026-06-16T11:21:02+00:00" />
 <meta property="article:modified_time" content="2026-06-16T11:21:02+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="UoP Covid Track and Trace" />
+<meta name="twitter:title" content="Zooniverse Panoptes Aggregation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Coleman Krawczyk"},"dateModified":"2026-06-16T11:21:02+00:00","datePublished":"2026-06-16T11:21:02+00:00","description":"Overview","headline":"UoP Covid Track and Trace","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/covid-track-and-trace/"},"url":"/projects/covid-track-and-trace/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Coleman Krawczyk"},"dateModified":"2026-06-16T11:21:02+00:00","datePublished":"2026-06-16T11:21:02+00:00","description":"Overview","headline":"Zooniverse Panoptes Aggregation","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/zooniverse/"},"url":"/projects/zooniverse/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -51,7 +51,7 @@
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
       </button>
-      <h1 class="project-name">UoP Covid Track and Trace</h1>
+      <h1 class="project-name">Zooniverse Panoptes Aggregation</h1>
       <!-- <h2 class="project-tagline">Innovation at the Institute of Cosmology and Gravitation</h2> -->
       
       <nav id="site-navigation" class="main-nav" aria-label="Main navigation">
@@ -68,12 +68,22 @@
       <article class="project">
   <header class="project-header">
     <div class="project-header-main">
-      <h1 class="project-title">UoP Covid Track and Trace</h1>
+      <h1 class="project-title">Zooniverse Panoptes Aggregation</h1>
       
-        <p class="project-status"><span class="project-status-badge">Completed Project</span></p>
-      
-      <p class="project-summary">A custom database to store UoP student and staff covid test results</p>
+      <p class="project-summary">A general purpose toolbox for analyzing the data from a Zooniverse citizen science project</p>
     </div>
+    
+      <div class="project-links">
+        
+          <a href="https://github.com/zooniverse/aggregation-for-caesar" class="btn btn--outline">View on GitHub</a>
+        
+        
+          <a href="https://zenodo.org/records/18863801" class="btn btn--outline">Paper</a>
+        
+        
+        
+
+      </div>
     
   </header>
 
@@ -83,11 +93,11 @@
       <div class="project-tags">
         <strong>Tags:</strong>
         
-          <span class="tag">Database</span>
-        
           <span class="tag">Python</span>
         
           <span class="tag">Data Science</span>
+        
+          <span class="tag">Citizen Science</span>
         
       </div>
     
@@ -96,33 +106,73 @@
   <div class="project-content">
     <h2 id="overview">Overview</h2>
 
-<p>During the covid-19 lock down UoP ran on-campus testing centers to monitor the spread of the virus on campus.  After testing people were given to choice to opt-in to having there data stored in a custom database that was used to identify any “hot spots” on campus.  Daily reports were generated and send to the university executive board so they could make informed decisions in response to the virus.</p>
+<p>The Zooniverse is the world’s leading citizen science platform, connecting researchers with more than 2.8 million volunteers to enable data classification and analysis across disciplines from astrophysics to the humanities. Since 2009, the Zooniverse has hosted over 500 projects from hundreds of researchers around the world.</p>
+
+<p>Zooniverse projects require multi-user classification to produce research-quality data, meaning that once volunteers have processed project data, research teams must engage in reconciliation methods to determine consensus results. Panoptes Aggregation is a general-purpose Python data processing toolbox that can be used with any Zooniverse project, first released in 2017.</p>
 
 <h2 id="key-features">Key Features</h2>
 
 <ul>
-  <li>Custom database to store test results in compliance with all data safety regulations</li>
-  <li>Ability to cross match students who were living on campus to identify if any students halls needed additional testing</li>
-  <li>Address mapping for students or staff not living on campus</li>
-  <li>A summary statists page that was emailed to the university executive board each day</li>
-  <li>Daily database backups created</li>
-  <li>Automatic integration with Google Forms for data insertion</li>
+  <li>Auto configuration: Can read in you Zooniverse project’s workflow export and produce the needed configuration files with reasonable defaults</li>
+  <li>Consensus calculation: Can read in your Zooniverse project’s classification export and create csv files with the consensus results for each subject on the project</li>
+  <li>Offline processing: Panoptes Aggregation can be run either locally using python, the command line interface, or the GUI.  Standalone installers are provided for Windows and Mac.</li>
+  <li>Real-time processing: Panoptes Aggregation can be used with the Zooniverse’s real-time data processing system called Caesar.  This can alow the consensus values to be monitored in real-time and trigger various events such as early retirement.</li>
+  <li>Documentation available: <a href="https://aggregation-caesar.zooniverse.org/docs">full documentation available</a></li>
+  <li>Use to power our text transcription project data analysis tool <a href="https://alice.zooniverse.org/">ALI/CE</a></li>
 </ul>
 
 <h2 id="technology-stack">Technology Stack</h2>
 
-<p>List the main technologies, programming languages, frameworks, and tools used:</p>
-
 <ul>
-  <li>Python 3.8</li>
+  <li>Python 3.9+</li>
   <li>Flask</li>
-  <li>Leaflet</li>
-  <li>Dash</li>
-  <li>PostgreSQL</li>
   <li>Docker</li>
+  <li>unittests</li>
 </ul>
 
     
+  <div class="project-partners">
+    
+
+    
+      <h4>In Collaboration With</h4>
+      <div class="logo-grid">
+        
+          
+          
+            <a href="https://www.port.ac.uk/" class="logo-item" target="_blank" rel="noopener noreferrer" title="University of Portsmouth">
+              <img src="/assets/images/logos/uop_logo.png" alt="University of Portsmouth Logo">
+            </a>
+          
+        
+          
+          
+        
+          
+          
+            <a href="https://www.ox.ac.uk/" class="logo-item" target="_blank" rel="noopener noreferrer" title="University of Oxford">
+              <img src="/assets/images/logos/oxford-logo.svg" alt="University of Oxford Logo">
+            </a>
+          
+        
+          
+          
+            <a href="https://www.adlerplanetarium.org/" class="logo-item" target="_blank" rel="noopener noreferrer" title="Adler Planetarium">
+              <img src="/assets/images/logos/adler-logo.png" alt="Adler Planetarium Logo">
+            </a>
+          
+        
+          
+          
+            <a href="https://twin-cities.umn.edu/" class="logo-item" target="_blank" rel="noopener noreferrer" title="University of Minnesota">
+              <img src="/assets/images/logos/minnesota-logo.png" alt="University of Minnesota Logo">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+
 
   </div>
 
@@ -145,12 +195,6 @@
                 </div>
               
             </div>
-          
-        
-          
-          
-        
-          
           
         
           
